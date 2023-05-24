@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Button from './components/Button';
-import Banner from './components/Banner';
-import Comedians from './components/Comedians';
+import Button from '../components/Button';
+import Banner from '../components/Banner';
+import Comedians from '../components/Comedians';
+import Attractions from '../components/Attractions';
 
 export default class Home extends Component {
 	render() {
@@ -13,6 +14,7 @@ export default class Home extends Component {
 					<View  style={styles.content}>
 						<Button />
 						<Comedians />
+						<Attractions />
 					</View>
 
 				</View>

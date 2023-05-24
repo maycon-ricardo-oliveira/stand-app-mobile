@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Cesta from './src/pages/Cesta';
-import Home from './src/Home';
+import Home from './src/pages/Home';
 
 import {
   useFonts,

@@ -27,7 +27,7 @@ const comedians: Comedian[] = [{
 },
 ]
 
-const Comedians = () => {
+export default function Attractions() {
 
 	return (
 		<View style={styles.container}>
@@ -51,8 +51,6 @@ const Comedians = () => {
 		</View>
 	)
 }
-
-export default Comedians
 
 const styles = StyleSheet.create({
 	container: {

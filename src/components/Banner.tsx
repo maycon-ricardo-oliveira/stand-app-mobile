@@ -20,7 +20,7 @@ export default function Banner() {
     <View style={styles.container}>
 			<ImageBackground style={styles.image} source={{uri : 'https://tribunadejundiai.com.br/wp-content/uploads/2022/09/Show-os-4-amigos.jpg'}}>
 				<LinearGradient
-					colors={['#010101','transparent','#000']}
+					colors={['#000','transparent', 'red']}
 					style={styles.background}
 				/>
 				<View style={styles.boxTitle}>
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
 		marginBottom: 40,
   },
 	image: {
+		position: 'relative',
     justifyContent: 'center',
 		alignItems: 'center',
 		resizeMode: 'cover',
