@@ -4,8 +4,9 @@ export default class Comedian {
 		readonly id: string,
 		readonly name: string,
 		readonly miniBio: string,
+		readonly thumbnail: string,
 		readonly socialMedias: string,
-		readonly attractions: string
+		readonly attractions: Array<any>
 	) {
 
 	}

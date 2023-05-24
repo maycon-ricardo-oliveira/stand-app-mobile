@@ -8,6 +8,13 @@ export default class StandAppGatewayHttp implements StandAppGateway {
 
 	}
 
+	async getComedianById(comedianId: string): Promise<any> {
+
+		console.log( `${this.baseUrl}/comedian/${comedianId}`)
+		const comedian = await this.httpClient.get(`${this.baseUrl}/comedian/${comedianId}`);
+		return comedian.data;
+	}
+
 	async getAttractionsByLocation(lat: string, lng: string, distance: string): Promise<Attraction> {
 		// TODO: insert parameters
 		const attractions = await this.httpClient.get(`${this.baseUrl}/attractions/location`);
