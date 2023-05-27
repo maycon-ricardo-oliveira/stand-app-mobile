@@ -73,7 +73,7 @@ export default function LocationTest() {
         <Button title="Cancelar Monitoração" onPress={clearLocation}/>
       </View>
 			<View style={styles.button}>
-        <Button title=" Monitoração" onPress={getCurrentLocation}/>
+        <Button title=" Monitoração" onPress={getLocation}/>
       </View>
     </View>
   );
