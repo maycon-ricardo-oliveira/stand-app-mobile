@@ -25,6 +25,7 @@ import {
   Poppins_900Black_Italic,
 } from '@expo-google-fonts/poppins';
 import AppLoading from 'expo-app-loading';
+import React from 'react';
 
 
 export default function App() {

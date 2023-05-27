@@ -4,10 +4,12 @@ import StandAppGatewayHttp from "../gateways/StandAppGatewayHttp";
 export default class BaseController {
 
 	constructor(
-		readonly baseUrl = process.env.STANDAPP_API_URL,
+		readonly baseUrl = 'http://localhost:80/api/v1',
 		readonly httpClient = new AxiosAdapter(),
 		readonly standAppGateway = new StandAppGatewayHttp(httpClient, baseUrl)
 	) {
 	
+		console.log("base url")
+		console.log(this.baseUrl)
 	}
 }

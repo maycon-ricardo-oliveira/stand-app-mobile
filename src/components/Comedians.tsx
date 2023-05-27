@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React  , { useState } from 'react'
 import Comedian from './Comedian'
+import GetComedianById from '../domain/useCases/GetComedianById';
+import GetComedianByIdController from '../domain/controllers/GetComedianByIdController';
 
 interface Comedian {
 	id: number;
@@ -28,6 +30,12 @@ const comedians: Comedian[] = [{
 ]
 
 const Comedians = () => {
+
+	async function getComedianById(){
+
+		const controller = new GetComedianByIdController();
+		return controller.execute('64546ba245402');
+	}
 
 	return (
 		<View style={styles.container}>

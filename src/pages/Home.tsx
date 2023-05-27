@@ -4,18 +4,24 @@ import Button from '../components/Button';
 import Banner from '../components/Banner';
 import Comedians from '../components/Comedians';
 import Attractions from '../components/Attractions';
+import ComedianProfile from './ComedianProfile';
+import LocationTest from '../components/LocationTest';
 
 export default class Home extends Component {
+
+
 	render() {
 		return (
 				<View style={styles.container}>
+					<LocationTest />
 					<Banner />
+					{/* <ComedianProfile /> */}
 
-					<View  style={styles.content}>
-						<Button />
-						<Comedians />
-						<Attractions />
-					</View>
+					{/* <View  style={styles.content}> */}
+						{/* <Button /> */}
+						{/* <Comedians /> */}
+						{/* <Attractions /> */}
+					{/* </View> */}
 
 				</View>
 			)
