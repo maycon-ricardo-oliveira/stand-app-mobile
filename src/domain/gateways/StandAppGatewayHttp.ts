@@ -1,6 +1,7 @@
 import StandAppGateway from "./StandAppGateway";
 import HttpClient from "../useCases/HttpClient";
 import Attraction from "../entities/Attraction";
+import axios from "axios";
 
 export default class StandAppGatewayHttp implements StandAppGateway {
 
@@ -14,32 +15,16 @@ export default class StandAppGatewayHttp implements StandAppGateway {
 		return comedian.data;
 	}
 
-	async getAttractionsByLocation(lat: string, lng: string, distance: string): Promise<Attraction> {
-		// TODO: insert parameters
+	async getAttractionsByLocation(lat: string, lng: string, distance: string): Promise<any> {
 
-	// 	 const params = { params: {
-	// 		answer: 42 ,
-	// 		lat: -23.546184,
-	// 		lng: -46.5798771,
-	// 		distance: 100,
-	// 		limit: 100,
-	// 	}
-	// }
+		const response = await axios.get(`${this.baseUrl}/attractions/location`, {params: {
+			lat: lat,
+			lng: lng,
+			distance: distance,
+			limit: 100,
+		}})
 
-		const config = {
-			 params: {
-				answer: 42 ,
-				lat: lat,
-				lng: lng,
-				distance: 1000000,
-				limit: 100,
-			}
-		}
-
-		const attractions = await this.httpClient.get(`${this.baseUrl}/attractions/location`);
-		console.log(attractions);
-
-		return attractions;
+		return response.data;
 	}
 
 	async getAttractionsByComedianId(comedianId: string): Promise<any> {

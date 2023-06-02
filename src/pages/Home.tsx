@@ -14,8 +14,8 @@ export default class Home extends Component {
 		return (
 				<View style={styles.container}>
 					<LocationTest />
-					<Banner />
-					<ComedianProfile />
+					{/* <Banner /> */}
+					{/* <ComedianProfile /> */}
 
 					{/* <View  style={styles.content}> */}
 						{/* <Button /> */}

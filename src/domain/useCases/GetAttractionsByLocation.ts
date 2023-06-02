@@ -10,7 +10,7 @@ export default class GetAttractionsByLocation {
 	async handle(lat: string, lng: string, distance: string): Promise<Attraction[]> {
 
 		const attractions = await this.standAppGateway.getAttractionsByLocation(lat, lng, distance);
-
+		
 		return attractions.map((attraction: any) => {
 			return new Attraction(
 				attraction.id,

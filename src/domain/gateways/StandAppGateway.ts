@@ -3,4 +3,3 @@ export default interface StandAppGateway {
 	getAttractionsByComedianId(comedianId: string): Promise<any>;
 	getComedianById( comedianId: string): Promise<any>;
 }
-

@@ -1,0 +1,3407 @@
+
+{
+	"project": "stand-app",
+	"status": 200,
+	"data": [
+			{
+					"id": "64192eff921c0",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428662a29dcf",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428662fc939a",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64286682d118e",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428669dd4e47",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642866e1add0c",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642866fe1eebb",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428673aebb81",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64286750f23d6",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428676deba23",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642867808c906",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428678f3ee94",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642867d823074",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642867f2c8a7f",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64286824d0566",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428683af06c8",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428697b475ed",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64286b8a27a77",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64287666bd863",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64287683aee3c",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428769f005b0",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642878fdd9e96",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642879d995b24",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64287a6fa1021",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64287c70483c6",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64288d9cd8c47",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64288e404c9d5",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64289916b807a",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64289929a0023",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642899a44b7f2",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642899bc2854e",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64289e99a99c4",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64289fbeef434",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64289fdd79dd8",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428b23c8bf64",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428b2d7b2272",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428b30912e41",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428b335e2975",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428b34298ea8",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6428b3576ae6f",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d332d50ff63",
+					"title": "Espalhando a Palavra",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "01:30",
+					"comedian": {
+							"id": "63d1c98de5cea",
+							"name": "Afonso Padilha",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be676",
+							"name": "Hillarius",
+							"seats": 200,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d332d50ff65",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "01:30",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3588390d9a",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d358bf52864",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d358e0ee1c0",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d358e1cd492",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d358f1300be",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3c87846561",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ca5875404",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ce73d3fb7",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3e6fdc864d",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3e95a65324",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ed10c0b1f",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ef31e3697",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ef78e9b30",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ef7a925c5",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ef7c07b66",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ef801211c",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d3ef927d60d",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d4018e7cff0",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d4100ee36af",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d4131da4f51",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d41340a3eba",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d4138be208c",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "63d4139c52a48",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "640be94fe1174",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "640be95750303",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "640be98081ebd",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "640bea737e9ab",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "640c04daf25ff",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6415f7f5a404b",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6416086d0cae7",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64164206c1305",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "641646971e174",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "641646bc0895f",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64191561a5aee",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "641917c62880c",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "641917e36db5e",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6419281d1996f",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64192941b3ac3",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6419299180913",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64192eb8c5861",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64192eec50a21",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64251b7844e22",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642660f5d914f",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642660f10dfab",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642660c3ed78d",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64266098f1abd",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6426607b77107",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6426604dd3060",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642658b931134",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6426146acdb52",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6425a5fce3c7c",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64251b7e02e91",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642519e5c702e",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6425184a74b58",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6425193ed4d11",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "6425194722b91",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "642519527a0be",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			},
+			{
+					"id": "64251b52b7352",
+					"title": "O Problema é meu",
+					"date": {
+							"date": "2023-02-21 22:50:59.000000",
+							"timezone_type": 3,
+							"timezone": "UTC"
+					},
+					"duration": "180",
+					"comedian": {
+							"id": "63d1dc4d4b52d",
+							"name": "Rodrigo Marques",
+							"miniBio": "any_miniBio",
+							"socialMedias": [],
+							"attractions": [],
+							"thumbnail": ""
+					},
+					"timeToEvent": false,
+					"place": {
+							"id": "63d332d4be678",
+							"name": "Espaço Cultural Urca",
+							"seats": 300,
+							"address": "Av. Salim Farah Maluf, 1850 - Quarta Parada, SP",
+							"zipcode": "03157-200",
+							"lat": "-23.546185",
+							"lng": "-46.579876",
+							"distance": "0.00015791618125155",
+							"image": {
+									"url": null
+							}
+					},
+					"status": "draft",
+					"owner": "63d1c98e22ccb"
+			}
+	]
+}

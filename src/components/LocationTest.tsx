@@ -37,11 +37,13 @@ export default function LocationTest() {
   }
   
   const getAttractionsByLocation = () => {
-    console.log("getAttractionsByLocation")
 
-    const lat = currentLatitude.toString(); 
-    const lng = currentLongitude.toString(); 
+    const lat = '-23.546184';
+    const lng = '-46.5798771';
+    // const lat = currentLatitude.toString(); 
+    // const lng = currentLongitude.toString(); 
     const distance = '100';
+
     const controller = new GetAttractionsByLocationController();
     const response = controller.execute(lat, lng, distance)
 
