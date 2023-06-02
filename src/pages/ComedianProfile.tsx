@@ -15,6 +15,7 @@ const ComedianProfile = () => {
 		async function getComedian (comedianId: string) {
 			const controller = new GetComedianByIdController();			
 			const data = await controller.execute(comedianId);
+			console.log(data);
 			setComedian(data);
 		}
 

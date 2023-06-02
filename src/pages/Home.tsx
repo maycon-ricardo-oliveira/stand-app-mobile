@@ -15,11 +15,13 @@ export default class Home extends Component {
 				<View style={styles.container}>
 					<LocationTest />
 					<Banner />
-					{/* <ComedianProfile /> */}
+					<ComedianProfile />
 
 					{/* <View  style={styles.content}> */}
 						{/* <Button /> */}
 						{/* <Comedians /> */}
+						{/* <Comedians /> */}
+
 						{/* <Attractions /> */}
 					{/* </View> */}
 

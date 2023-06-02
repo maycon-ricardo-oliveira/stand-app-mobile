@@ -9,3 +9,8 @@ emulator -avd avd_name
 
 adb kill-server
 
+To run android
+npx expo start -a
+
+To run ios
+npx expo start -i

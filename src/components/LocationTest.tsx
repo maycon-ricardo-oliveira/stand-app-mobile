@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, PermissionsAndroid, Button, Platform } from "react-native";
 import * as Location from 'expo-location';
+import GetAttractionsByLocationController from "../domain/controllers/GetAttractionsByLocationController";
+import Attraction from "../domain/entities/Attraction";
 
 
 export default function LocationTest() {
   const [currentLatitude, setCurrentLatitude] = useState('');
   const [currentLongitude, setCurrentLongitude] = useState('');
+
+  const [attractions, setAttractions] = useState<Attraction[]>([]);
 
   const callLocation = () => {
     if(Platform.OS === 'ios') {
@@ -32,6 +36,19 @@ export default function LocationTest() {
     }
   }
   
+  const getAttractionsByLocation = () => {
+    console.log("getAttractionsByLocation")
+
+    const lat = currentLatitude.toString(); 
+    const lng = currentLongitude.toString(); 
+    const distance = '100';
+    const controller = new GetAttractionsByLocationController();
+    const response = controller.execute(lat, lng, distance)
+
+    console.log(response);
+
+  }
+
 	const getLocation = () => {
 		Location.installWebGeolocationPolyfill()
       navigator.geolocation.getCurrentPosition(success);
@@ -48,6 +65,8 @@ export default function LocationTest() {
 		console.log(`More or less ${crd.accuracy} meters.`);
 		setCurrentLatitude(currentLatitude);
 		setCurrentLongitude(currentLongitude);
+
+    getAttractionsByLocation();
 	}
 
   const clearLocation = () => {

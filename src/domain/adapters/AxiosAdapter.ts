@@ -3,8 +3,9 @@ import axios from "axios";
 
 export default class AxiosAdapter implements HttpClient {
 
-	async get(url: string): Promise<any> {
-		const response = await axios.get(url);
+	async get(url: string, config: any = {}): Promise<any> {
+		
+		const response = await axios.get(url, config);
 		return response.data;
 	}
 
