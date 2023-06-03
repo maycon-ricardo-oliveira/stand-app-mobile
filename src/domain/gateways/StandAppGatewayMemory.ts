@@ -8,9 +8,14 @@ export default class StandAppGatewayMemory implements StandAppGateway {
 	constructor (readonly httpClient: HttpClient, readonly baseUrl: string) {
 
 	}
+	getPlaceById(placeId: string): Promise<any> {
+		throw new Error("Method not implemented.");
+	}
+
 	getAttractionsByPlaceId(placeId: string): Promise<any> {
 		throw new Error("Method not implemented.");
 	}
+
 	async getAttractionsByLocation(lat: string, lng: string, distance: string): Promise<any> {		
 		const response = await getAttractionsByLocationMock;
 		return response.data;
@@ -19,10 +24,10 @@ export default class StandAppGatewayMemory implements StandAppGateway {
 	getAttractionsByComedianId(comedianId: string): Promise<any> {
 		throw new Error("Method not implemented.")
 	}
+
 	getComedianById(comedianId: string): Promise<any> {
 		throw new Error("Method not implemented.")
 	}
 
-	
 }
 
