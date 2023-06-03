@@ -9,6 +9,11 @@ export default class StandAppGatewayHttp implements StandAppGateway {
 
 	}
 
+	async getAttractionsByPlaceId(placeId: string): Promise<any> {
+		const attractions = await this.httpClient.get(`${this.baseUrl}/attractions/place/${placeId}`);
+		return attractions.data;
+	}
+
 	async getComedianById(comedianId: string): Promise<any> {
 
 		const comedian = await this.httpClient.get(`${this.baseUrl}/comedian/${comedianId}`);
@@ -29,7 +34,7 @@ export default class StandAppGatewayHttp implements StandAppGateway {
 
 	async getAttractionsByComedianId(comedianId: string): Promise<any> {
 		const attractions = await this.httpClient.get(`${this.baseUrl}/attractions/comedian/${comedianId}`);
-		return attractions;
+		return attractions.data;
 	}
 
 }
