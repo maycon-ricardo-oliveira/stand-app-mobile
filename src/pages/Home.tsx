@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Button from '../components/Button';
+import Button from '../components/ButtonViolet';
 import Banner from '../components/Banner';
 import Comedians from '../components/Comedians';
 import Attractions from '../components/Attractions';
 import ComedianProfile from './ComedianProfile';
 import LocationTest from '../components/LocationTest';
+import Login from './Login';
 
 export default class Home extends Component {
 
@@ -13,7 +14,11 @@ export default class Home extends Component {
 	render() {
 		return (
 				<View style={styles.container}>
-					<LocationTest />
+
+					<Login />
+
+
+					{/* <LocationTest /> */}
 					{/* <Banner /> */}
 					{/* <ComedianProfile /> */}
 
