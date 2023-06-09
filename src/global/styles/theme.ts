@@ -4,11 +4,14 @@ export const theme = {
     linearTwo: '#160447',
     linearThree: '#200253',
     linearFour: '#2C0268',
+    linear: [
+    '#0E053D','#160447', '#200253','#2C0268',
+    ],
 
     blueNight: "#0E053D",
 
     violet: "#9E86FF",
-    violet200: '#2A2452',
+    blueCamp: '#2A2452',
     pink: "#B535F6",
     pink200: '#514B77',
     purple: "#790EFB",
@@ -16,9 +19,14 @@ export const theme = {
     white: "#FFFFFF",
     white200: "#FAFAFC",
 
+    grey200: '#514B77',
+
     black: "#242424",
     error: "#E43C5E",
-    success: "#3CB371"
+    success: "#3CB371",
+    transparent: 'rgba(52, 52, 52, 0)',
+
+    shadow: '#6f7ec9'
   },
 
   fonts: {

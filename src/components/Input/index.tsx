@@ -6,22 +6,28 @@ import { theme } from '../../global/styles/theme';
 
 import EmailSvg from '../../assets/email.svg';
 
-
 type Props = TextInputProps & {
-  placeholder: string;
-	type: 'email' | 'password' | 'search' | 'default'
+	placeholder: string;
+  type: 'email' | 'password' | 'search' | 'default'
 }
 
 export default function Input({placeholder, type, ...rest }: Props) {
 	const {linearOne, linearTwo, linearThree, linearFour, white } = theme.colors;
 
 	return (
-		<TextInput
-		style={styles.container}
-		{...rest}
-		placeholder={placeholder}
-		placeholderTextColor={white}
-	>
-	</TextInput>
+		<View style={styles.container}>
+
+			<TextInput
+				style={styles.input}
+				{...rest}
+				placeholder={placeholder}
+				placeholderTextColor={white}
+			/>
+			<EmailSvg
+				style={styles.icon}
+				width={24} height={24}
+			/>
+
+		</View>
 	)
 }
