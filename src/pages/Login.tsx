@@ -8,6 +8,7 @@ import { ButtonViolet } from "../components/ButtonViolet";
 import { ButtonSimple } from "../components/ButtonSimple";
 import { Divisor } from "../components/Divisor";
 import { ButtonSocialMedia } from "../components/ButtonSocialMedia";
+import PassworInput from "../components/PassworInput";
 
 
 export default function Login(){
@@ -18,6 +19,7 @@ export default function Login(){
 	function handleButton() {
 
 	}
+
 	return (
 		<Backgound gradient={false}>
 			<View style={styles.container}>
@@ -38,10 +40,9 @@ export default function Login(){
 							/>
 						</View>
 						<View style={styles.marginTop}>
-							<Input
-								placeholder="Senha"
-								type='password'
-								onChangeText={setPassword}
+
+
+							<PassworInput 
 							/>
 						</View>
           
@@ -137,7 +138,6 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		flexDirection: 'row',
 		marginTop: 24,
-		
 	}
 
 });

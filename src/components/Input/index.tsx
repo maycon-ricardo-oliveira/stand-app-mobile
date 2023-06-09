@@ -5,6 +5,7 @@ import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 
 import EmailSvg from '../../assets/email.svg';
+import KeyholeSvg from '../../assets/keyhole.svg';
 
 type Props = TextInputProps & {
 	placeholder: string;
@@ -12,21 +13,23 @@ type Props = TextInputProps & {
 }
 
 export default function Input({placeholder, type, ...rest }: Props) {
-	const {linearOne, linearTwo, linearThree, linearFour, white } = theme.colors;
+	const { white } = theme.colors;
 
 	return (
 		<View style={styles.container}>
 
 			<TextInput
-				style={styles.input}
+			style={styles.input}
 				{...rest}
 				placeholder={placeholder}
 				placeholderTextColor={white}
+				{...rest}
 			/>
-			<EmailSvg
-				style={styles.icon}
-				width={24} height={24}
-			/>
+				{
+          type == 'email' ? <EmailSvg width={24} height={24} style={styles.icon} /> :
+          type == 'password' ? <KeyholeSvg width={24} height={24} style={styles.icon} /> :
+					null
+        }
 
 		</View>
 	)

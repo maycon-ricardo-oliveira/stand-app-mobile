@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Cesta from './src/pages/Cesta';
 import Home from './src/pages/Home';
+
+import * as SplashScreen from 'expo-splash-screen';
+
 import { useFonts } from 'expo-font';
 import {
   Poppins_400Regular,
@@ -16,10 +18,13 @@ import {
   Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 
-import AppLoading from 'expo-app-loading';
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
-export default function App() {
+SplashScreen.preventAutoHideAsync();
+
+function App() {
+  const [appIsReady, setAppIsReady] = useState(false);
+  
   let [fontsLoaded] = useFonts({
     Montserrat_400Regular,
     Montserrat_700Bold,
@@ -30,14 +35,27 @@ export default function App() {
     Poppins_900Black,
   });
 
-	if (!fontsLoaded) {
-    return <AppLoading />;
+
+  useEffect(() => {
+    async function prepare() {
+      await SplashScreen.preventAutoHideAsync();
+    }
+    prepare();
+  }, []);
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
   }
   
   return (
-    <View style={styles.container}>
-      {/* <Text>Open up to start working on your app!</Text>
-      <Cesta></Cesta> */}
+    
+    <View style={styles.container} onLayout={onLayoutRootView}>
       <Home></Home>
       <StatusBar style="auto" />
     </View>
@@ -55,3 +73,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
 });
+
+
+export default App;

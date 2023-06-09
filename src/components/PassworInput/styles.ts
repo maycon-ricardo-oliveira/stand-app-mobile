@@ -4,17 +4,17 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
 
   container: {
-    flexDirection: 'row',
-    height: 56,
+    width: '100%'
   },
-  icon: {
-    width: 24,
-    height: 24,
+
+  iconLeft: {
     position: 'absolute',
+    right: 16,
     top: 16,
-    left: 16
+    width: 24,
+    height: 24
   },
-  
+
   input: {
     color: theme.colors.white,
     fontFamily: theme.fonts.text400,
@@ -26,6 +26,6 @@ export const styles = StyleSheet.create({
     borderRadius: 16,
     fontSize: 16,
     paddingLeft: 44,
-    paddingVertical: 16
-  }
+    paddingVertical: 16 
+}
 });

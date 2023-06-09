@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Button from '../components/ButtonViolet';
 import Banner from '../components/Banner';
 import Comedians from '../components/Comedians';
 import Attractions from '../components/Attractions';

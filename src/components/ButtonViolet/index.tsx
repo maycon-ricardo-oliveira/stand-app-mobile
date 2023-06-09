@@ -12,9 +12,7 @@ type Props = RectButtonProps & {
 
 export function ButtonViolet({ title, isBigTitle, ...rest }: Props) {
   return (
-    <RectButton style={styles.container}
-      {...rest}
-    >
+    <RectButton style={styles.container} {...rest}>
       <Text style={isBigTitle ? styles.bigTitle : styles.title}>
         {title}
       </Text>
