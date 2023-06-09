@@ -25,32 +25,32 @@ export default function Login(){
 					style={styles.image}
 				/>
 
-			<View style={styles.content}>
+				<View style={styles.content}>
 
-				<Text style={styles.title}>Login</Text>
+					<Text style={styles.title}>Login</Text>
 
-				<Input
-					placeholder="E-mail"
-					type='email'
-					onChangeText={setEmail}
-				/>
-				<Input
-					placeholder="Senha"
-					type='password'
-					onChangeText={setPassword}
-					
-				/>
+					<Input
+						placeholder="E-mail"
+						type='email'
+						onChangeText={setEmail}
+					/>
+					<Input
+						placeholder="Senha"
+						type='password'
+						onChangeText={setPassword}
+					/>
 
-				<Text 
-					style={styles.forgot}
-				>Esqueci minha senha</Text>
-				</View>
+					<Text 
+						style={styles.forgot}
+					>Esqueci minha senha</Text>
 
-				<ButtonViolet
+					<ButtonViolet
 						title="Entrar"
 						isBigTitle={false}
 						onPress={handleButton}
 					/>
+					
+				</View>
 			</View>
 
 		</Backgound>
