@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, View, Image } from 'react-native';
+import React, { createRef, useState, forwardRef, useImperativeHandle } from "react";
+import { StyleSheet, Text, View, Image, Alert } from 'react-native';
 
 import { theme } from '../global/styles/theme';
 import { Backgound } from "../components/Background";
@@ -15,8 +15,19 @@ export default function Login(){
 
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+	const emailInputRef =  createRef();
+	const [ error, setError] = useState(false);
 
-	function handleButton() {
+	function handleLogin(socialMedia?: string) {
+
+		if (email === '') {
+			console.log('Email inválido');
+			setError(!error);
+		}
+
+	}
+
+	function handleRegister(){
 
 	}
 
@@ -34,15 +45,27 @@ export default function Login(){
 
 						<View style={styles.marginTop}>
 							<Input
+							  isError={error}
 								placeholder="E-mail"
 								type='email'
+								autoCapitalize="none"
 								onChangeText={setEmail}
+								autoCorrect={false}
+								keyboardType="email-address"
+								value={email}
 							/>
+							{
+								error &&
+								<Text style={styles.errorMsg}>• E-mail ou senha estão incorretos</Text>
+							}
+							
 						</View>
 						<View style={styles.marginTop}>
-
-
 							<PassworInput 
+							  isError={error}
+								autoCorrect={false}
+								value={password}
+								onChangeText={setPassword}
 							/>
 						</View>
           
@@ -53,11 +76,12 @@ export default function Login(){
 					<ButtonViolet
             title="Entrar"
             isBigTitle={false}
-            onPress={handleButton}
+            onPress={() => handleLogin()}
           />
 					<View style={styles.buttonSimple}>
 						<ButtonSimple
 							title={"Criar conta"}	
+							onPress={handleRegister}
 						/>
 					</View>
 
@@ -68,12 +92,15 @@ export default function Login(){
 					<View style={styles.socialMediaSection}>
 						<ButtonSocialMedia 
 							media={'google'}
+							onPress={() => handleLogin('google')}
 						/>
 						<ButtonSocialMedia 
 							media={'apple'}
+							onPress={() => handleLogin('apple')}
 						/>
 						<ButtonSocialMedia 
 							media={'facebook'}
+							onPress={() => handleLogin('facebook')}
 						/>
 					</View>
 				</View>
@@ -96,7 +123,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
     width: 240,
     height: 80,
-		marginBottom: 40,
+		marginBottom: 28,
 	},
 	content: {
 		flex: 1,
@@ -127,7 +154,13 @@ const styles = StyleSheet.create({
 	marginTop: {
 		marginTop: 24
 	},
-
+	errorMsg: {
+		fontFamily: theme.fonts.text400,
+		fontSize: 14,
+		lineHeight: 18,
+		color: theme.colors.grey,
+		marginTop: 8
+	},
 	buttonSimple: {
 		marginBottom: 28,
 		marginTop: 16

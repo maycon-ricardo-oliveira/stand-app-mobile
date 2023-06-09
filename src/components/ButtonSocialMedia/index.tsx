@@ -27,7 +27,7 @@ export function ButtonSocialMedia({ media, ...rest }: Props) {
         {
           media == 'apple' ? <AppleSvg width={32} height={32}/> :
           media == 'facebook' ? <FacebookSvg width={32} height={32}/> :
-          media == 'google' ? <GoogleSvg width={32} height={32}/> : null
+          media == 'google' ? <GoogleSvg width={32} height={24}/> : null
         }
       </View>
     </RectButton>

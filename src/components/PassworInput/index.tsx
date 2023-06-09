@@ -12,9 +12,10 @@ import Input from '../Input';
 import { RectButton } from 'react-native-gesture-handler';
 
 type Props = TextInputProps & {
+  isError: boolean;
 }
 
-export default function PassworInput({...rest }: Props) {
+export default function PassworInput({isError, ...rest }: Props) {
 
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -32,9 +33,11 @@ export default function PassworInput({...rest }: Props) {
         type='password'
         onChangeText={setPassword}
         secureTextEntry={!showPassword}
+        isError={isError}
+        {...rest }
       />
 
-      <RectButton onPress={handleShowPassword} style={styles.iconLeft}>
+      <RectButton onPress={handleShowPassword} style={[styles.iconLeft, isError ? { right: 48 } : { right: 16 } ]}>
           {
             !showPassword ? 
               <EyesShowSvg 

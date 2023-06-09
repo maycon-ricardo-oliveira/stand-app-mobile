@@ -27,5 +27,26 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     paddingLeft: 44,
     paddingVertical: 16
+  },
+  inputError: {
+    color: theme.colors.white,
+    fontFamily: theme.fonts.text400,
+    borderWidth: 1,
+    flex: 1,
+    height: 56,
+    backgroundColor: theme.colors.blueCamp,
+    borderRadius: 16,
+    fontSize: 16,
+    paddingLeft: 44,
+    paddingVertical: 16,
+    borderColor: theme.colors.error200
+  },
+  iconError: {
+    color: theme.colors.error200,
+    width: 24,
+    height: 24,
+    position: 'absolute',
+    top: 16,
+    right: 16
   }
 });

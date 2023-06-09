@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
 
   iconLeft: {
     position: 'absolute',
-    right: 16,
     top: 16,
     width: 24,
     height: 24

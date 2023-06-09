@@ -20,9 +20,11 @@ export const theme = {
     white200: "#FAFAFC",
 
     grey200: '#514B77',
+    grey: '#9593A0',
 
     black: "#242424",
     error: "#E43C5E",
+    error200: "#E87C92",
     success: "#3CB371",
     transparent: 'rgba(52, 52, 52, 0)',
 
