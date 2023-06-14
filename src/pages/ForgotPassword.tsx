@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Text , StyleSheet, View } from "react-native";
 import { Backgound } from "../components/Background";
 import Input from "../components/Input";
-import { Container } from "../components/Container";
 import { ButtonViolet } from "../components/ButtonViolet";
 import { theme } from "../global/styles/theme";
 import { StackTypes } from "../routes/stack";
@@ -14,7 +13,7 @@ export default function ForgotPassword(){
 	const [email, setEmail] = useState('');
 	const [error, setError] = useState(false);
 
-	function handleForgtPassword() {
+	function handleForgotPassword() {
 		navigation.navigate('Login')
 		console.log('Forgot Password Send');
 		setError(!error);
@@ -43,7 +42,7 @@ export default function ForgotPassword(){
 						<ButtonViolet
 							isBigTitle
 							title="Enviar"
-							onPress={handleForgtPassword}
+							onPress={handleForgotPassword}
 						>
 						</ButtonViolet>
 					</View>

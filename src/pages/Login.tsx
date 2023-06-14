@@ -30,7 +30,7 @@ export default function Login(){
 	}
 
 	function handleRegister(){
-		navigation.navigate('Home')
+		navigation.navigate('Register')
 
 	}
 
@@ -136,10 +136,6 @@ const styles = StyleSheet.create({
 		fontFamily: theme.fonts.title600,
     color: theme.colors.white,
     fontSize: 24,
-	},
-	forgot: {
-
-		
 	},
 	margin: {
 		marginTop: 32

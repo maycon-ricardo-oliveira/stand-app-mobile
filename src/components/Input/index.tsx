@@ -7,11 +7,13 @@ import { theme } from '../../global/styles/theme';
 import EmailSvg from '../../assets/email.svg';
 import ErrorSvg from '../../assets/error.svg';
 import KeyholeSvg from '../../assets/keyhole.svg';
+import UserSvg from '../../assets/user-rounded.svg';
+import PhoneSvg from '../../assets/phone.svg';
 
 type Props = TextInputProps & {
 	placeholder: string;
 	isError: boolean;
-  type: 'email' | 'password' | 'search' | 'default'
+  type: 'email' | 'password' | 'user' | 'phone' | 'search' | 'default'
 }
 
 export default function Input ({placeholder, type, isError, ...rest }: Props) {
@@ -29,6 +31,8 @@ export default function Input ({placeholder, type, isError, ...rest }: Props) {
 				{
           type == 'email' ? <EmailSvg width={24} height={24} style={styles.icon} /> :
           type == 'password' ? <KeyholeSvg width={24} height={24} style={styles.icon} /> :
+          type == 'user' ? <UserSvg width={24} height={24} style={styles.icon} /> :
+          type == 'phone' ? <PhoneSvg width={24} height={24} style={styles.icon} /> :
 					null
         }
 
