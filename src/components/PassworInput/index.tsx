@@ -1,4 +1,4 @@
-import { View, Text, TextInputProps, TextInput } from 'react-native'
+import { View, Text, TextInputProps, TextInput, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 
 
@@ -37,7 +37,7 @@ export default function PassworInput({isError, ...rest }: Props) {
         {...rest }
       />
 
-      <RectButton onPress={handleShowPassword} style={[styles.iconLeft, isError ? { right: 48 } : { right: 16 } ]}>
+      <TouchableOpacity onPress={handleShowPassword} style={[styles.iconLeft, isError ? { right: 48 } : { right: 16 } ]}>
           {
             !showPassword ? 
               <EyesShowSvg 
@@ -48,7 +48,7 @@ export default function PassworInput({isError, ...rest }: Props) {
                 width={24} height={24}
               />
           }
-      </RectButton>
+      </TouchableOpacity>
     
 
 		</View>

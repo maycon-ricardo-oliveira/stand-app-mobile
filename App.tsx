@@ -1,10 +1,12 @@
+import { View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './src/pages/Home';
-
 import * as SplashScreen from 'expo-splash-screen';
-
+import React, { useCallback, useEffect, useState } from 'react';
 import { useFonts } from 'expo-font';
+
+import StackNavigator from './src/routes/stack';
+
 import {
   Poppins_400Regular,
   Poppins_500Medium,
@@ -18,12 +20,9 @@ import {
   Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 
-import React, { useCallback, useEffect, useState } from 'react';
-
 SplashScreen.preventAutoHideAsync();
 
-function App() {
-  const [appIsReady, setAppIsReady] = useState(false);
+const App = () => {
   
   let [fontsLoaded] = useFonts({
     Montserrat_400Regular,
@@ -34,7 +33,6 @@ function App() {
     Poppins_700Bold,
     Poppins_900Black,
   });
-
 
   useEffect(() => {
     async function prepare() {
@@ -52,27 +50,23 @@ function App() {
   if (!fontsLoaded) {
     return null;
   }
-  
+
   return (
-    
-    <View style={styles.container} onLayout={onLayoutRootView}>
-      <Home></Home>
-      <StatusBar style="auto" />
-    </View>
+
+    <NavigationContainer>
+
+			<View onLayout={onLayoutRootView} >
+				<StatusBar
+					style="light"
+					backgroundColor="transparent"
+					translucent
+				/>
+			</View>
+
+     <StackNavigator/>
+    </NavigationContainer>
+
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-		backgroundColor: '#212835',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 428,
-    height: 926,
-    alignSelf: 'center'
-  },
-});
-
+};
 
 export default App;

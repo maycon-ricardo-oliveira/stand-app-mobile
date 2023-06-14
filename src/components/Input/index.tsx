@@ -1,5 +1,5 @@
-import { View, Text, TextInputProps, TextInput } from 'react-native'
-import React, { LegacyRef, forwardRef, useImperativeHandle } from 'react'
+import { View, TextInputProps, TextInput } from 'react-native'
+import React from 'react'
 
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';

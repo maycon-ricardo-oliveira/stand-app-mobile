@@ -1,5 +1,5 @@
 import React, { createRef, useState, forwardRef, useImperativeHandle } from "react";
-import { StyleSheet, Text, View, Image, Alert } from 'react-native';
+import { StyleSheet, Text, View, Image, Alert, Button } from 'react-native';
 
 import { theme } from '../global/styles/theme';
 import { Backgound } from "../components/Background";
@@ -9,17 +9,18 @@ import { ButtonSimple } from "../components/ButtonSimple";
 import { Divisor } from "../components/Divisor";
 import { ButtonSocialMedia } from "../components/ButtonSocialMedia";
 import PassworInput from "../components/PassworInput";
+import { useNavigation } from '@react-navigation/native';
+import { StackTypes } from "../routes/stack";
 
 
 export default function Login(){
-
+	const navigation = useNavigation<StackTypes>();
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-	const emailInputRef =  createRef();
-	const [ error, setError] = useState(false);
+	const [error, setError] = useState(false);
 
 	function handleLogin(socialMedia?: string) {
-
+		navigation.goBack()
 		if (email === '') {
 			console.log('Email inválido');
 			setError(!error);
@@ -76,8 +77,9 @@ export default function Login(){
 					<ButtonViolet
             title="Entrar"
             isBigTitle={false}
-            onPress={() => handleLogin()}
+						onPress={() => handleLogin()}
           />
+
 					<View style={styles.buttonSimple}>
 						<ButtonSimple
 							title={"Criar conta"}	

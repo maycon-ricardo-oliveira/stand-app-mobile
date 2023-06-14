@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { RectButtonProps } from 'react-native-gesture-handler/lib/typescript/components/GestureButtons';
 
@@ -10,7 +10,7 @@ import GoogleSvg from '../../assets/socialMedia/google_fill.svg';
 import FacebookSvg from '../../assets/socialMedia/facebook_fill.svg';
 
 
-type Props = RectButtonProps & {
+type Props = TouchableOpacityProps & {
   media: 'google' | 'apple' | 'facebook'
 }
 
@@ -20,7 +20,7 @@ export function ButtonSocialMedia({ media, ...rest }: Props) {
   }
 
   return (
-    <RectButton style={styles.container}
+    <TouchableOpacity style={styles.container}
       {...rest}
     >
       <View style={styles.icon}>
@@ -30,6 +30,6 @@ export function ButtonSocialMedia({ media, ...rest }: Props) {
           media == 'google' ? <GoogleSvg width={32} height={24}/> : null
         }
       </View>
-    </RectButton>
+    </TouchableOpacity>
   )
 }

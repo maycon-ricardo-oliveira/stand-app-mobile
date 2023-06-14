@@ -6,6 +6,9 @@ import Attractions from '../components/Attractions';
 import ComedianProfile from './ComedianProfile';
 import LocationTest from '../components/LocationTest';
 import Login from './Login';
+import ForgotPassword from './ForgotPassword';
+
+
 
 export default class Home extends Component {
 
@@ -14,8 +17,9 @@ export default class Home extends Component {
 		return (
 				<View style={styles.container}>
 
-					<Login />
+					{/* <Login /> */}
 
+					<ForgotPassword/>
 
 					{/* <LocationTest /> */}
 					{/* <Banner /> */}
