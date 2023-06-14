@@ -1,14 +1,11 @@
 import React from 'react';
-import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
-import { RectButtonProps } from 'react-native-gesture-handler/lib/typescript/components/GestureButtons';
+import { TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
 
 import { styles } from './styles';
 
 import AppleSvg from '../../assets/socialMedia/apple_fill.svg';
 import GoogleSvg from '../../assets/socialMedia/google_fill.svg';
 import FacebookSvg from '../../assets/socialMedia/facebook_fill.svg';
-
 
 type Props = TouchableOpacityProps & {
   media: 'google' | 'apple' | 'facebook'

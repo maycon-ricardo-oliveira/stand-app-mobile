@@ -1,15 +1,11 @@
-import { View, Text, TextInputProps, TextInput, TouchableOpacity } from 'react-native'
+import { View, TextInputProps, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 
-
 import { styles } from './styles';
-import { theme } from '../../global/styles/theme';
-
 
 import EyesHideSvg from '../../assets/eyes-hide.svg';
 import EyesShowSvg from '../../assets/eyes-show.svg';
 import Input from '../Input';
-import { RectButton } from 'react-native-gesture-handler';
 
 type Props = TextInputProps & {
   isError: boolean;
@@ -49,8 +45,6 @@ export default function PassworInput({isError, ...rest }: Props) {
               />
           }
       </TouchableOpacity>
-    
-
 		</View>
 	)
 }

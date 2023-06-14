@@ -1,7 +1,5 @@
 import React from 'react';
-import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
-import { RectButtonProps } from 'react-native-gesture-handler/lib/typescript/components/GestureButtons';
+import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
 import { styles } from './styles';
 

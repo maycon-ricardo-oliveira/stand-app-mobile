@@ -10,7 +10,7 @@ type Props = {
 }
 
 export function Backgound({gradient, children }: Props) {
-  const {linear, violet, blueNight} = theme.colors;
+  const {linear} = theme.colors;
 
   return (
     gradient ?

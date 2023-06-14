@@ -19,10 +19,10 @@ export default class Home extends Component {
 
 					{/* <Login /> */}
 
-					<ForgotPassword/>
+					{/* <ForgotPassword/> */}
 
 					{/* <LocationTest /> */}
-					{/* <Banner /> */}
+					<Banner />
 					{/* <ComedianProfile /> */}
 
 					{/* <View  style={styles.content}> */}

@@ -1,23 +1,18 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
-import { RectButtonProps } from 'react-native-gesture-handler/lib/typescript/components/GestureButtons';
+import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
 import { styles } from './styles';
 
-type Props = TouchableOpacity & {
+type Props = TouchableOpacityProps & {
   title: string;
 }
 
 export function ButtonSimple({ title, ...rest }: Props) {
   return (
-    <View  style={styles.container}>
-      <TouchableOpacity {...rest}>
+      <TouchableOpacity  style={styles.container} {...rest}>
       <Text style={styles.title}>
         {title}
       </Text>
     </TouchableOpacity>
-    </View>
-   
   )
 }

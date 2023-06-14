@@ -18,8 +18,8 @@ export const styles = StyleSheet.create({
   title: {
     fontFamily: theme.fonts.title700,
     color: theme.colors.white,
-    textAlign: 'center',
     fontSize: 20,
+    marginLeft: 8,
     flex: 1,
   },
 

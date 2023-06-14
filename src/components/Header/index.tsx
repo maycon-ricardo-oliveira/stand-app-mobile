@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
@@ -27,15 +26,15 @@ export function Header({ title, action }: Props) {
       style={styles.container}
     >
 
-      <BorderlessButton
+      <TouchableOpacity
         onPress={handleGoBack}
       >
         <Feather
-          name='arrow-left'
+          name='chevron-left'
           size={24}
           color={white}
         />
-      </BorderlessButton>
+      </TouchableOpacity>
 
       <Text style={styles.title} >
         {title}

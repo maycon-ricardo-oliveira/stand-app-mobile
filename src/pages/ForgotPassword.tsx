@@ -5,23 +5,26 @@ import Input from "../components/Input";
 import { Container } from "../components/Container";
 import { ButtonViolet } from "../components/ButtonViolet";
 import { theme } from "../global/styles/theme";
-
+import { StackTypes } from "../routes/stack";
+import { useNavigation } from "@react-navigation/native";
+import { Header } from "../components/Header";
 
 export default function ForgotPassword(){
-
+	const navigation = useNavigation<StackTypes>();
 	const [email, setEmail] = useState('');
 	const [error, setError] = useState(false);
 
 	function handleForgtPassword() {
-
-			console.log('Email inválido');
-			setError(!error);
-	
-
+		navigation.navigate('Login')
+		console.log('Forgot Password Send');
+		setError(!error);
 	}
 
 	return (
 		<Backgound gradient={false}>
+			<Header
+				title="Esqueci a senha"
+			/>
 			<View style={styles.container}>
 				<View style={styles.content}>
 					<View >
@@ -31,10 +34,10 @@ export default function ForgotPassword(){
 						placeholder="E-mail"
 						type="email"
 					/>
-					{
-								error &&
-								<Text style={styles.errorMsg}>• E-mail ou senha estão incorretos</Text>
-							}
+						{
+							error &&
+							<Text style={styles.errorMsg}>• E-mail ou senha estão incorretos</Text>
+						}
 					</View>
 					<View>
 						<ButtonViolet
@@ -52,22 +55,13 @@ export default function ForgotPassword(){
 export const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingVertical: 40,
-		paddingHorizontal: 16
+		paddingHorizontal: 24,
 	},
   content: {
 		flex: 1,
-		padding: 16,
     justifyContent: 'space-between',
+		paddingBottom: 32
   },
-	title: {
-		color: theme.colors.white,
-		fontFamily: theme.fonts.title600,
-		fontSize: 24,
-		lineHeight: 36,
-		paddingHorizontal: 8,
-		marginLeft: 24
-	},
 	errorMsg: {
 		fontFamily: theme.fonts.text400,
 		fontSize: 14,
@@ -81,10 +75,9 @@ export const styles = StyleSheet.create({
 		lineHeight: 24,
 		fontFamily: theme.fonts.text400,
 		fontWeight: '500',
-		paddingHorizontal: 8,
 		marginBottom: 24,
 		marginTop: 8,
-		marginLeft: 24
+		marginLeft: 8
 	}
 
 });

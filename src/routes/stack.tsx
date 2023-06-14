@@ -3,11 +3,14 @@ import { View, Text , Button} from 'react-native';
 import { useNavigation} from '@react-navigation/native';
 import { NativeStackNavigationProp, createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from '../pages/Login';
+import Home from '../pages/Home';
+import ForgotPassword from '../pages/ForgotPassword';
 
 type StackNavigation = {
 	Home : undefined,
 	Details: undefined,
-  Login: undefined
+  Login: undefined,
+  ForgotPassword: undefined
 }
 
 export type StackTypes = NativeStackNavigationProp<StackNavigation>;
@@ -35,15 +38,14 @@ function Details() {
   );
 }
 
-
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
   return (
      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={Details} />
-        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Login" component={Login}  options={{headerShown: false}} />
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{headerShown: false}} />
 
       </Stack.Navigator>
   );

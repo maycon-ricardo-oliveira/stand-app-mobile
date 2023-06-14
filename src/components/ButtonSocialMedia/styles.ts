@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title700,
     borderWidth: 1,
     marginHorizontal: 12,
-},
+  },
   icon: {
     position: 'absolute',
     top: 12,
