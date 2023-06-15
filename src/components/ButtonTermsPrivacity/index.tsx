@@ -32,6 +32,5 @@ export function ButtonTermsPrivacity( { ...rest }: Props) {
         <Text style={styles.textBold} onPress={handleShowTerms} > termos de privacidade</Text> 
       </Text>
     </View>
-    
   )
 }

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Text , StyleSheet, View } from "react-native";
-import { Backgound } from "../components/Background";
-import Input from "../components/Input";
-import { ButtonViolet } from "../components/ButtonViolet";
-import { theme } from "../global/styles/theme";
-import { StackTypes } from "../routes/stack";
+import { Text, View } from "react-native";
+import { Backgound } from "../../components/Background";
+import Input from "../../components/Input";
+import { ButtonViolet } from "../../components/ButtonViolet";
+import { StackTypes } from "../../routes/stack";
 import { useNavigation } from "@react-navigation/native";
-import { Header } from "../components/Header";
+import { Header } from "../../components/Header";
+import { styles } from './styles';
 
 export default function ForgotPassword(){
 	const navigation = useNavigation<StackTypes>();
@@ -51,32 +51,3 @@ export default function ForgotPassword(){
 		</Backgound>
 	)
 }
-export const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		paddingHorizontal: 24,
-	},
-  content: {
-		flex: 1,
-    justifyContent: 'space-between',
-		paddingBottom: 32
-  },
-	errorMsg: {
-		fontFamily: theme.fonts.text400,
-		fontSize: 14,
-		lineHeight: 18,
-		color: theme.colors.grey,
-		marginTop: 8
-	},
-	text: {
-		color: theme.colors.white,
-		fontSize: 16,
-		lineHeight: 24,
-		fontFamily: theme.fonts.text400,
-		fontWeight: '500',
-		marginBottom: 24,
-		marginTop: 8,
-		marginLeft: 8
-	}
-
-});

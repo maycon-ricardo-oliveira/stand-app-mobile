@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Banner from '../components/Banner';
-import Comedians from '../components/Comedians';
-import Attractions from '../components/Attractions';
-import ComedianProfile from './ComedianProfile';
-import LocationTest from '../components/LocationTest';
-import Login from './Login';
-import ForgotPassword from './ForgotPassword';
+import Banner from '../../components/Banner';
+import Comedians from '../../components/Comedians';
+import Attractions from '../../components/Attractions';
+import ComedianProfile from '../ComedianProfile';
+import LocationTest from '../../components/LocationTest';
+import Login from '../Login';
+import ForgotPassword from '../ForgotPassword';
 
-
+import { styles } from './styles';
 
 export default class Home extends Component {
-
 
 	render() {
 		return (
@@ -38,13 +37,3 @@ export default class Home extends Component {
 	}
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-		backgroundColor: '#212835',
-		borderRadius: 50,
-		width: '100%'
-  },
-	content: {
-	}
-});
