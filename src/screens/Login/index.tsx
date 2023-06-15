@@ -85,6 +85,7 @@ export default function Login(){
 						<View style={styles.buttonSimple}>
 							<ButtonSimple
 								title={"Criar conta"}	
+								isViolet={false}
 								onPress={handleRegister}
 							/>
 						</View>

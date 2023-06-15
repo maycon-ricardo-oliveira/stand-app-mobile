@@ -8,6 +8,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
+import { ButtonSimple } from "../../components/ButtonSimple";
 
 export default function VerifyEmail(){
   const { white } = theme.colors;
@@ -68,17 +69,21 @@ export default function VerifyEmail(){
             />
 
           </View>
+
+          <Text style={styles.sendCodeText}>Reenviar código em: <Text  style={styles.timer}> 0:23</Text></Text>
           
           {
-            error &&
-            <Text style={styles.errorMsg}>• E-mail ou senha estão incorretos</Text>
+            error ?
+            <ButtonViolet
+              isBigTitle
+              title="Enviar"
+              onPress={handlVerifyEmail}
+            >
+            </ButtonViolet>
+            :
+            <ButtonSimple title={"Reenviar Código"} isViolet={true} />
           }
-          <ButtonViolet
-            isBigTitle
-            title="Enviar"
-            onPress={handlVerifyEmail}
-          >
-          </ButtonViolet>
+
         </View>
       </View>
 		</Backgound>

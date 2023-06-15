@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
   },
   lineCode: {
     justifyContent: 'space-between',
-    flexDirection: 'row'
+    flexDirection: 'row',
+		marginBottom: 28,
   },
   smallInput: {
     padding: 16,
@@ -28,7 +29,6 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title600,
     fontSize: 24,
     lineHeight: 36,
-
   },
 	errorMsg: {
 		fontFamily: theme.fonts.text400,
@@ -36,6 +36,20 @@ export const styles = StyleSheet.create({
 		lineHeight: 18,
 		color: theme.colors.grey,
 		marginTop: 8
+	},
+	sendCodeText: {
+		padding: 8,
+		fontFamily: theme.fonts.text400,
+		color: theme.colors.grey,
+		textAlign: 'center',
+		fontSize: 16,
+		lineHeight: 32,
+	},
+	timer: {
+		fontFamily: theme.fonts.text400,
+		fontSize: 14,
+		lineHeight: 18,
+		color: theme.colors.violet,
 	},
 	text: {
 		color: theme.colors.white,

@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { NativeStackNavigationProp, createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from '../pages/Login';
-import Home from '../pages/Home';
-import ForgotPassword from '../pages/ForgotPassword';
-import Register from '../pages/Register';
-import VerifyEmail from '../pages/VerifyEmail';
+import Login from '../screens/Login';
+import Home from '../screens/Home';
+import ForgotPassword from '../screens/ForgotPassword';
+import Register from '../screens/Register';
+import VerifyEmail from '../screens/VerifyEmail';
 
 type StackNavigation = {
 	Home: undefined,
