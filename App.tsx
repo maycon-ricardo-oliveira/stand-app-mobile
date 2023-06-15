@@ -17,6 +17,7 @@ import {
 
 import {
   Montserrat_400Regular,
+  Montserrat_500Medium,
   Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 
@@ -26,6 +27,7 @@ const App = () => {
   
   let [fontsLoaded] = useFonts({
     Montserrat_400Regular,
+    Montserrat_500Medium,
     Montserrat_700Bold,
     Poppins_400Regular,
     Poppins_500Medium,

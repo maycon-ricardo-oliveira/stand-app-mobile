@@ -29,7 +29,7 @@ export function Checkbox({ isChecked, isError, ...rest }: Props) {
     <TouchableOpacity 
 		  {...rest} 
 		  onPress={handleCheck} 
-		  style={[styles.button, isError ? { right: 48 } : { right: 16 } ]}
+		  style={[styles.button]}
 		>
 			{
 				error ?

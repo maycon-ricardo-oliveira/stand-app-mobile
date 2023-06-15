@@ -38,6 +38,7 @@ export const theme = {
     title500: 'Poppins_500Medium',
     buttonText400: 'Poppins_400Regular',
     text400: 'Montserrat_400Regular',
+    text500: 'Montserrat_500Medium',
     text700: 'Montserrat_700Bold',
   }
 };

@@ -36,7 +36,6 @@ export const styles = StyleSheet.create({
   },
 
   checkboxContainer: {
-		paddingHorizontal: 24,
   }
 
 });
