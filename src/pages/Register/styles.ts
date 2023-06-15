@@ -34,18 +34,9 @@ export const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     marginBottom: 32,
   },
+
   checkboxContainer: {
-
-  },
-
-  checked: {
-
-  },
-  check: {
-
-  },
-  label: {
-
+		paddingHorizontal: 24,
   }
 
 });

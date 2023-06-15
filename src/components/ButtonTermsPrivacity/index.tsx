@@ -17,14 +17,15 @@ export function ButtonTermsPrivacity( { ...rest }: Props) {
 	}
 
   return (
-    <Checkbox 
-      onPress={handleTerms}
-      isChecked={terms}
-      isError={error}
-      style={styles.container}
-      {...rest}
-    >
+    <View>
+      <Checkbox 
+        onPress={handleTerms}
+        isChecked={terms}
+        isError={error}
+        {...rest}
+      />
       <Text style={styles.text}>Concordo com os termos de privacidade</Text>
-    </Checkbox>
+    </View>
+    
   )
 }
