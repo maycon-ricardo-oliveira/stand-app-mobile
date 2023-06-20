@@ -5,10 +5,11 @@ import { Checkbox } from '../Checkbox';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 type Props = TouchableOpacityProps & {
-
+  themeText: 'dark' | 'white';
 }
 
-export function ButtonTermsPrivacity( { ...rest }: Props) {
+export function ButtonTermsPrivacity( {themeText, ...rest }: Props) {
+
   const [terms, setTerms] = useState(false);
   const [ error, setError] = useState(false)
 
@@ -26,10 +27,11 @@ export function ButtonTermsPrivacity( { ...rest }: Props) {
         onPress={handleTerms}
         isChecked={terms}
         isError={error}
+        checkBoxColor={themeText}
         {...rest}
       />
-      <Text style={styles.text}>Concordo com os 
-        <Text style={styles.textBold} onPress={handleShowTerms} > termos de privacidade</Text> 
+      <Text style={themeText == 'white' ? styles.textWhite : styles.texBlack}>Concordo com os 
+        <Text style={themeText == 'white' ? styles.textBoldWhite : styles.textBoldBlack} onPress={handleShowTerms} > termos de privacidade</Text> 
       </Text>
     </View>
   )

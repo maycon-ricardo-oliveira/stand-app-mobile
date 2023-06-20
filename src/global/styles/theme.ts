@@ -26,8 +26,8 @@ export const theme = {
     error: "#E43C5E",
     error200: "#E87C92",
     success: "#3CB371",
+    success200: "#5AD0B4",
     transparent: 'rgba(52, 52, 52, 0)',
-
     shadow: '#6f7ec9'
   },
 

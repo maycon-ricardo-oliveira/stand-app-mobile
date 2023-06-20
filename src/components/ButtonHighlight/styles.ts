@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { theme } from '../../global/styles/theme';
 
+
 export const styles = StyleSheet.create({
 
   container: {
@@ -9,7 +10,6 @@ export const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: theme.colors.violet,
     borderRadius: 16,
-    borderWidth: 2,
     flexDirection: 'row',
     alignItems: 'center',
     fontFamily: theme.fonts.title700,

@@ -57,6 +57,9 @@ export const styles = StyleSheet.create({
 		justifyContent: 'center',
 		flexDirection: 'row',
 		marginTop: 24,
+	},
+	modal: {
+		flex:1
 	}
 
 });

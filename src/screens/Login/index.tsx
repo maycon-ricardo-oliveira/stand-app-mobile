@@ -3,7 +3,7 @@ import { Text, View, Image } from 'react-native';
 
 import { Backgound } from "../../components/Background";
 import Input from "../../components/Input";
-import { ButtonViolet } from "../../components/ButtonViolet";
+import { ButtonHighlight } from "../../components/ButtonHighlight";
 import { ButtonSimple } from "../../components/ButtonSimple";
 import { Divisor } from "../../components/Divisor";
 import { ButtonSocialMedia } from "../../components/ButtonSocialMedia";
@@ -13,12 +13,28 @@ import { StackTypes } from "../../routes/stack";
 import { ButtonForgotPassword } from "../../components/ButtonForgotPassword";
 
 import { styles } from './styles';
+import { ModalView } from "../../components/ModalView";
+import { ModalAlert } from "../../components/ModalAlert";
+import { ModalAlertTerms } from "../../components/ModalAlertTerms";
+import { ModalAlertLocation } from "../../components/ModalAlertLocation";
 
 export default function Login(){
 	const navigation = useNavigation<StackTypes>();
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState(false);
+
+
+	const [openTermsModal, setOpenTermsModal] = useState(false);
+	const [openLocationModal, setOpenLocationModal] = useState(false);
+
+	function handleCloseTermsModal() {
+    setOpenTermsModal(!openTermsModal);
+  }
+
+	function handleCloseLocation() {
+    setOpenLocationModal(!openLocationModal);
+  }
 
 	function handleLogin(socialMedia?: string) {
 		navigation.navigate('VerifyEmail')
@@ -31,7 +47,6 @@ export default function Login(){
 
 	function handleRegister(){
 		navigation.navigate('Register')
-
 	}
 
 	function handleForgotPassword() {
@@ -77,7 +92,7 @@ export default function Login(){
 						onPress={handleForgotPassword}
 					/>
 					<View style={styles.margin} >
-						<ButtonViolet
+						<ButtonHighlight
 							title="Entrar"
 							isBigTitle={false}
 							onPress={() => handleLogin()}
@@ -102,15 +117,24 @@ export default function Login(){
 						/>
 						<ButtonSocialMedia 
 							media={'apple'}
-							onPress={() => handleLogin('apple')}
+							onPress={() => handleCloseLocation()}
 						/>
 						<ButtonSocialMedia 
 							media={'facebook'}
-							onPress={() => handleLogin('facebook')}
+							onPress={() => handleCloseTermsModal()}
 						/>
 					</View>
 				</View>
 			</View>
+
+			<ModalAlertTerms 
+				visible={openTermsModal} closeModal={handleCloseTermsModal}>
+			</ModalAlertTerms>
+		
+			<ModalAlertLocation  visible={openLocationModal} closeModal={handleCloseLocation } >
+			</ModalAlertLocation>
+		
+		
 		</Backgound>
 	)
 }

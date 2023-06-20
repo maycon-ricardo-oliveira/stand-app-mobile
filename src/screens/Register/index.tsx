@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Text, View } from "react-native";
 import { Backgound } from "../../components/Background";
 import Input from "../../components/Input";
-import { ButtonViolet } from "../../components/ButtonViolet";
+import { ButtonHighlight } from "../../components/ButtonHighlight";
 import { StackTypes } from "../../routes/stack";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
@@ -46,7 +46,6 @@ export default function Register() {
 	}
 
 	function setErrorInput(input: string) {
-		setError(errors => [...errors, input]);
 	}
 
 	function checkError(input: string): boolean {
@@ -138,14 +137,14 @@ export default function Register() {
 
 					<View style={styles.checkboxContainer}>
 						<ButtonTermsPrivacity
-						  
+						  themeText={'white'}
 						/>
 					</View>
 
 				</View>
 
 				<View style={styles.footer}>
-					<ButtonViolet
+					<ButtonHighlight
 						isBigTitle
 						title="Enviar"
 						onPress={handleRegister}

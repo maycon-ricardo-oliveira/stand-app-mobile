@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Text, TextInput, View } from "react-native";
 import { Backgound } from "../../components/Background";
 import Input from "../../components/Input";
-import { ButtonViolet } from "../../components/ButtonViolet";
+import { ButtonHighlight } from "../../components/ButtonHighlight";
 import { StackTypes } from "../../routes/stack";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
@@ -16,11 +16,21 @@ export default function VerifyEmail(){
 	const [email, setEmail] = useState('');
 	const [error, setError] = useState(false);
 
+  const item2 = useRef();
+  const item3 = useRef();
+  const item4 = useRef();
+  const item5 = useRef();
+  const item6 = useRef();
+
 	function handlVerifyEmail() {
 		navigation.navigate('Login')
 		console.log('Verify Email Send');
 		setError(!error);
 	}
+
+  function handleSubmitCode() {
+    console.log('Submit code');
+  }
 
 	return (
 		<Backgound gradient={false}>
@@ -33,39 +43,74 @@ export default function VerifyEmail(){
 					
           <View style={styles.lineCode}>
             <TextInput
+              maxLength={1}
               placeholder="*"
               style={styles.smallInput}
               placeholderTextColor={white}
+              onChangeText={() => {
+                item2.current.focus();
+              }}
+              blurOnSubmit={false}
             />
 
             <TextInput
+              maxLength={1}
               placeholder="*"
               style={styles.smallInput}
               placeholderTextColor={white}
+              ref={item2}
+              onChangeText={() => {
+                item3.current.focus();
+              }}
+              blurOnSubmit={false}
             />
 
             <TextInput
+              maxLength={1}
               placeholder="*"
               style={styles.smallInput}
               placeholderTextColor={white}
+              ref={item3}
+              onChangeText={() => {
+                item4.current.focus();
+              }}
+              blurOnSubmit={false}
             />
 
             <TextInput
+              maxLength={1}
               placeholder="*"
               style={styles.smallInput}
               placeholderTextColor={white}
+              ref={item4}
+              onChangeText={() => {
+                item5.current.focus();
+              }}
+              blurOnSubmit={false}
             />
 
             <TextInput
+              maxLength={1}
               placeholder="*"
               style={styles.smallInput}
               placeholderTextColor={white}
+              ref={item5}
+              onChangeText={() => {
+                item6.current.focus();
+              }}
+              blurOnSubmit={false}
             />
 
             <TextInput
+              maxLength={1}
               placeholder="*"
               style={styles.smallInput}
               placeholderTextColor={white}
+              ref={item6}
+              onChangeText={
+                handleSubmitCode
+              }
+              blurOnSubmit={false}
             />
 
           </View>
@@ -74,12 +119,12 @@ export default function VerifyEmail(){
           
           {
             error ?
-            <ButtonViolet
+            <ButtonHighlight
               isBigTitle
               title="Enviar"
               onPress={handlVerifyEmail}
             >
-            </ButtonViolet>
+            </ButtonHighlight>
             :
             <ButtonSimple title={"Reenviar Código"} isViolet={true} />
           }

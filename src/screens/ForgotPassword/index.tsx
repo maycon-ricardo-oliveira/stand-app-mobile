@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Text, View } from "react-native";
 import { Backgound } from "../../components/Background";
 import Input from "../../components/Input";
-import { ButtonViolet } from "../../components/ButtonViolet";
+import { ButtonHighlight } from "../../components/ButtonHighlight";
 import { StackTypes } from "../../routes/stack";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
@@ -39,12 +39,12 @@ export default function ForgotPassword(){
 						}
 					</View>
 					<View>
-						<ButtonViolet
+						<ButtonHighlight
 							isBigTitle
 							title="Enviar"
 							onPress={handleForgotPassword}
 						>
-						</ButtonViolet>
+						</ButtonHighlight>
 					</View>
 				</View>
 			</View>
