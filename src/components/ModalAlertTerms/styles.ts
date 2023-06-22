@@ -49,10 +49,11 @@ export const styles = StyleSheet.create({
 
   },
   modalText: {
-    color: theme.colors.violet,
-    fontFamily: theme.fonts.title600,
-    fontSize: 32,
-    
+    color: theme.colors.black,
+    fontFamily: theme.fonts.text500,
+    fontSize: 14,
+    lineHeight: 20,
+    textAlign: 'center'
   },
   footer: {
     flexDirection: 'column',

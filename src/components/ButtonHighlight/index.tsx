@@ -20,7 +20,6 @@ export function ButtonHighlight({ title, type, isBigTitle, ...rest }: Props) {
       type == 'error' ? { backgroundColor: error200} :
       { backgroundColor: violet} 
     
-    
     ]} {...rest}>
       <Text style={isBigTitle ? styles.bigTitle : styles.title}>
         {title}

@@ -48,11 +48,16 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
 
   },
-  modalText: {
-    color: theme.colors.violet,
-    fontFamily: theme.fonts.title600,
+  modalTitle: {
+    color: theme.colors.success,
+    textAlign: 'center',
     fontSize: 32,
-    
+    fontFamily: theme.fonts.title600,
+    fontWeight: '600',
+    lineHeight: 36,
+  },
+  modalContent: {
+
   },
   footer: {
     flexDirection: 'column',

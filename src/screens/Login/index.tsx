@@ -17,6 +17,8 @@ import { ModalView } from "../../components/ModalView";
 import { ModalAlert } from "../../components/ModalAlert";
 import { ModalAlertTerms } from "../../components/ModalAlertTerms";
 import { ModalAlertLocation } from "../../components/ModalAlertLocation";
+import { ModalAlertSendEmail } from "../../components/ModalAlertSendEmail";
+import { ModalAlertInvalidCode } from "../../components/ModalAlertInvalidCode";
 
 export default function Login(){
 	const navigation = useNavigation<StackTypes>();
@@ -33,7 +35,7 @@ export default function Login(){
   }
 
 	function handleCloseLocation() {
-    setOpenLocationModal(!openLocationModal);
+    setOpenLocationModal(false);
   }
 
 	function handleLogin(socialMedia?: string) {
@@ -127,14 +129,20 @@ export default function Login(){
 				</View>
 			</View>
 
-			<ModalAlertTerms 
+			{/* <ModalAlertTerms 
 				visible={openTermsModal} closeModal={handleCloseTermsModal}>
-			</ModalAlertTerms>
+			</ModalAlertTerms> */}
 		
-			<ModalAlertLocation  visible={openLocationModal} closeModal={handleCloseLocation } >
-			</ModalAlertLocation>
+			{/* <ModalAlertLocation visible={openLocationModal} closeModal={handleCloseLocation } >
+			</ModalAlertLocation> */}
 		
+		{/* <ModalAlertSendEmail>
+
+		</ModalAlertSendEmail> */}
 		
+		<ModalAlertInvalidCode closeModal={() => handleCloseLocation}>
+			
+		</ModalAlertInvalidCode>
 		</Backgound>
 	)
 }

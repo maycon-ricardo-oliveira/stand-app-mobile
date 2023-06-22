@@ -12,6 +12,7 @@ import { ButtonTermsPrivacity } from '../ButtonTermsPrivacity';
 import { ButtonHighlight } from '../ButtonHighlight';
 
 import { styles } from './styles';
+import { ModalAlert } from '../ModalAlert';
 const ModalCheckPng = require('../../assets/modal-check.png') ;
 
 type Props = ModalProps & {
@@ -22,36 +23,16 @@ type Props = ModalProps & {
 export function ModalAlertTerms({ children, closeModal, ...rest }: Props) {
 
   const [modalVisible, setModalVisible] = useState(false);
-  
+
   return (
-
-    <Modal
-      transparent
-      statusBarTranslucent
-      animationType="slide"
-      {...rest}
+    <ModalAlert 
+      image={ModalCheckPng}  
+      title={'Antes de Logar'} 
+      closeModal={() => closeModal}
     >
-      <TouchableWithoutFeedback onPress={closeModal}>
-        <View style={styles.centeredView}>
-          <View style={styles.modalView}>
-            <Image 
-              style={styles.image} 
-              source={ModalCheckPng}
-            />
-            <Text style={styles.modalText}>Antes de Logar</Text>
-						<ButtonTermsPrivacity
-              themeText={'dark'}
-						/>
-
-            <View style={styles.footer}>
-              <ButtonHighlight title={'Continuar'} isBigTitle={false}/>
-            </View>
-
-          </View>
-        </View>
-      </TouchableWithoutFeedback>
-
-    </Modal>
-
+      <ButtonTermsPrivacity
+        themeText={'dark'}
+      />
+    </ModalAlert>
   )
 }
