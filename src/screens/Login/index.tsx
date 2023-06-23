@@ -39,7 +39,7 @@ export default function Login(){
   }
 
 	function handleLogin(socialMedia?: string) {
-		navigation.navigate('VerifyEmail')
+		navigation.navigate('Home')
 		if (email === '') {
 			console.log('Email inválido');
 			setError(!error);
@@ -140,9 +140,9 @@ export default function Login(){
 
 		</ModalAlertSendEmail> */}
 		
-		<ModalAlertInvalidCode closeModal={() => handleCloseLocation}>
+		{/* <ModalAlertInvalidCode closeModal={() => handleCloseLocation}>
 			
-		</ModalAlertInvalidCode>
+		</ModalAlertInvalidCode> */}
 		</Backgound>
 	)
 }

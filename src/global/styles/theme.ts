@@ -7,6 +7,9 @@ export const theme = {
     linear: [
     '#0E053D','#160447', '#200253','#2C0268',
     ],
+    linearBanner: [
+       'rgba(14, 5, 61, 0.00)','rgba(14, 5, 61, 0.76)', '#0E053D',
+    ],
 
     blueNight: "#0E053D",
 
@@ -28,6 +31,7 @@ export const theme = {
     success: "#3CB371",
     success200: "#5AD0B4",
     transparent: 'rgba(52, 52, 52, 0)',
+    transparent200: 'rgba(255, 255, 255, 0.20)',
     shadow: '#6f7ec9'
   },
 
