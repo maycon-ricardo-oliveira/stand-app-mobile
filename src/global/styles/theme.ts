@@ -28,8 +28,13 @@ export const theme = {
     black: "#242424",
     error: "#E43C5E",
     error200: "#E87C92",
+    error000: "rgba(147, 98, 125, 0.20)",
     success: "#3CB371",
+    success900: "#5AD0B4",
     success200: "#5AD0B4",
+    success000: 'rgba(90, 208, 180, 0.20)',
+    alert: '#CED05A',
+    alert000: 'rgba(206, 208, 90, 0.20)',
     transparent: 'rgba(52, 52, 52, 0)',
     transparent200: 'rgba(255, 255, 255, 0.20)',
     shadow: '#6f7ec9'

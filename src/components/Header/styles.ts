@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
   title: {
     fontFamily: theme.fonts.title700,
     color: theme.colors.white,
-    fontSize: 20,
+    fontSize: 24,
     marginLeft: 8,
     flex: 1,
   },
