@@ -1,5 +1,5 @@
 import React, { Component, useCallback, useState } from 'react'
-import { FlatList, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, FlatList, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { StackTypes } from "../../routes/stack";
 import { styles } from './styles';
 import MainBanner from '../../components/MainBanner';
@@ -16,6 +16,8 @@ import OnFireSvg from '../../assets/on-fire.svg';
 import Title from '../../components/Title';
 import { CardEventHighlight } from '../../components/CardEventHighlight';
 import BannerSmall from '../../components/BannerSmall';
+import { ButtonLike } from '../../components/ButtonLike';
+import { ButtonLocation } from '../../components/ButtonLocation';
 
 export default function Home () {
 
@@ -24,6 +26,10 @@ export default function Home () {
 	
 	function handleShowAllComedians() {
 		navigation.navigate('AllComedians')
+	}
+
+	function handleShowLocations() {
+		navigation.navigate('Locations')
 	}
 
 	async function loadComedians() {
@@ -94,6 +100,16 @@ export default function Home () {
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView  style={{marginBottom: 20}}>
+				<View style={styles.lineHeader}>
+
+					<Image
+						source={require('../../assets/avatar.png')}
+						style={styles.avatar}
+					/>
+
+					<ButtonLocation title={'Poços de Caldas'} onPress={handleShowLocations}/>
+					<ButtonLike isLiked={true} />
+				</View>
 				<MainBanner />
 
 				<AroundYou/>
