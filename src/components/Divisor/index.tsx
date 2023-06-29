@@ -3,7 +3,7 @@ import { styles } from './styles';
 import React from 'react';
 
 type Props = {
-  text: string | null;
+  text?: string | null;
 }
 
 export function Divisor({ text = null}: Props) {

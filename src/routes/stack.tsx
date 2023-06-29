@@ -6,6 +6,7 @@ import ForgotPassword from '../screens/ForgotPassword';
 import Register from '../screens/Register';
 import VerifyEmail from '../screens/VerifyEmail';
 import AllComedians from '../screens/AllComedians';
+import Locations from '../screens/Locations';
 
 type StackNavigation = {
 	Home: undefined,
@@ -15,6 +16,7 @@ type StackNavigation = {
   Register: undefined;
   VerifyEmail: undefined;
   AllComedians: undefined;
+  Locations: undefined;
 
 }
 
@@ -31,7 +33,7 @@ const StackNavigator = () => {
       <Stack.Screen name="Register" component={Register} options={{headerShown: false}} />
       <Stack.Screen name="VerifyEmail" component={VerifyEmail} options={{headerShown: false}} />
       <Stack.Screen name="AllComedians" component={AllComedians} options={{headerShown: false}} />
-
+      <Stack.Screen name="Locations" component={Locations} options={{headerShown: false}} />
     </Stack.Navigator>
   );
 };

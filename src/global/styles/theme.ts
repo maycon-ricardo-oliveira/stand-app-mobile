@@ -12,6 +12,7 @@ export const theme = {
     ],
 
     blueNight: "#0E053D",
+    blueNight200: "#080034",
 
     violet: "#9E86FF",
     blueCamp: '#2A2452',
@@ -20,6 +21,7 @@ export const theme = {
     purple: "#790EFB",
     
     white: "#FFFFFF",
+    white000: 'rgba(255, 255, 255, 0.40)',
     white200: "#FAFAFC",
 
     grey200: '#514B77',
