@@ -14,8 +14,8 @@ export const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		paddingHorizontal: 24,
+		marginTop: 16,
 		zIndex: 10,
-		backgroundColor: theme.colors.alert
 	},
 	avatar: {
 		width: 30,
