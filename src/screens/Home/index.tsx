@@ -89,7 +89,9 @@ export default function Home () {
 	}
 
 	function handleComedianDetails(comedian: ComedianProps) {
-
+		navigation.navigate('DetailsComedian', {
+			id: comedian.id	
+		})
 	}
 
 	useFocusEffect(useCallback(() => {

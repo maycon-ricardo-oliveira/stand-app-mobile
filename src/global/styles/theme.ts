@@ -28,6 +28,7 @@ export const theme = {
     grey: '#9593A0',
 
     black: "#242424",
+    black700: "#656676",
     error: "#E43C5E",
     error200: "#E87C92",
     error000: "rgba(147, 98, 125, 0.20)",

@@ -37,11 +37,11 @@ export default function PassworInput({isError, ...rest }: Props) {
           {
             !showPassword ? 
               <EyesShowSvg 
-                width={24} height={24}
+                width={24} height={24}  color="#E43" fill="#E43" 
               />
             :
               <EyesHideSvg 
-                width={24} height={24}
+                width={24} height={24}  color="#E43" fill="#E43" 
               />
           }
       </TouchableOpacity>
