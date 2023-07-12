@@ -7,5 +7,6 @@
 Fixing things after
  [ ] get classification images to Calssification component 12 | 14
  [ ] change tags on a comedian details to a scroll view
+ [ ] carde comedian need do fix a padding
 - Authentication
 https://docs.expo.dev/guides/authentication/
