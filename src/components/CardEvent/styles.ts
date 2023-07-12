@@ -5,9 +5,8 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
 
   container: {
-    width: 311,
+    
     height: 113,
-    marginLeft: 16,
     paddingLeft: 12,
     paddingRight: 8,
     paddingVertical: 16,

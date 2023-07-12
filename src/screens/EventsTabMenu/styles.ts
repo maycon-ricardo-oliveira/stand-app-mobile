@@ -2,9 +2,14 @@ import { StyleSheet } from 'react-native';
 import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
+	background: {
+		flex: 1,
+		backgroundColor: theme.colors.blueNight,
+		paddingTop: 16,
+		paddingHorizontal: 20
+	},
 	container: {
 		flex: 1,
-		paddingHorizontal: 24,
 	},
   content: {
 		flex: 1,

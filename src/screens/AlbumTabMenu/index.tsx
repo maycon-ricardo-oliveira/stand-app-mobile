@@ -20,13 +20,13 @@ export default function AlbumTabMenu(){
 	}
 
 	return (
-		<>
+		<View style={styles.background}>
 			<Header
 				title="Album tab menu"
 			/>
 			<View style={styles.container}>
 
 			</View>
-		</>
+		</View>
 	)
 }

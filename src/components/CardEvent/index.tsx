@@ -3,41 +3,48 @@ import { Image, Text, TouchableOpacity, TouchableOpacityProps, View } from 'reac
 
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
-import { EventStatus } from '../EventStatus';
-import { Classification } from '../Classfication';
+import { EventStatus, EventStatusProps } from '../EventStatus';
+import { Classification, ClassificationProps } from '../Classfication';
 
-type Props = TouchableOpacityProps & {
+export type EventProps = TouchableOpacityProps & {
+  id: string;
   title: string;
   comedianName: string;
-  classification: string;
+  classification: ClassificationProps;
   date: string;
   location: string;
   image: any;
+  status: EventStatusProps;
 }
 
-export function CardEvent({ title, comedianName, classification, date, location, image, ...rest }: Props) {
+type Props = {
+  width: number;
+  data: EventProps
+}
+
+export function CardEvent({ data, width, ...rest }: Props) {
   const { violet, success200, error200 } = theme.colors;
 
   function serializeTitle(){
-    if (title.length > 18) {
-      return title.slice(0, 15) + '...';
+    if (data.title.length > 18) {
+      return data.title.slice(0, 15) + '...';
     }
-    return title
+    return data.title
   }
   return (
-    <TouchableOpacity style={[styles.container, 
+    <TouchableOpacity style={[styles.container, {width: width}
     ]} {...rest}>
       <View style={styles.content}>
-        <Text style={styles.date}>16 Mai 2023 - 6:15pm </Text>  
+        <Text style={styles.date}>{data.date}</Text>  
         <Text style={styles.title}>{serializeTitle()}</Text>
-        <Text style={styles.comedianName}>{comedianName}</Text>
+        <Text style={styles.comedianName}>{data.comedianName}</Text>
 
         <View style={styles.info}>
-          <Text style={styles.location}>Santos, SP</Text>
+          <Text style={styles.location}>{data.location}</Text>
           <View style={styles.status}>
-            <Classification title='L'/>
+            <Classification title={data.classification.title}/>
             <View style={{marginLeft: 8}}>
-              <EventStatus status='done' />
+              <EventStatus status={data.status.status} />
             </View>
           </View>
           
@@ -45,7 +52,7 @@ export function CardEvent({ title, comedianName, classification, date, location,
       </View>
       
       <Image 
-				source={image} 
+				source={data.image} 
 				style={styles.image}
 				/>
     </TouchableOpacity>

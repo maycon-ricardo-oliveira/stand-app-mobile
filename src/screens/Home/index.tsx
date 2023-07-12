@@ -18,6 +18,7 @@ import { CardEventHighlight } from '../../components/CardEventHighlight';
 import BannerSmall from '../../components/BannerSmall';
 import { ButtonLike } from '../../components/ButtonLike';
 import { ButtonLocation } from '../../components/ButtonLocation';
+import { ListEvents } from '../../components/ListEvents';
 
 export default function Home () {
 
@@ -116,28 +117,7 @@ export default function Home () {
 
 				<AroundYou/>
 
-				<ScrollView
-					horizontal
-					style={styles.events}
-					showsHorizontalScrollIndicator={false}
-				>
-				<CardEvent
-					title={'Assim caminha a humanidade'}
-					comedianName={'Renato Albani'}
-					classification={'L'}
-					date={'16 Mai 2023 - 6:15pm'}
-					location={' Santos, SP'}
-					image={RenatoAlbani}
-				/>
-				<CardEvent
-					title={'O inimigo do nível'}
-					comedianName={'Rodrigo Marques'}
-					classification={'L'}
-					date={'16 Mai 2023 - 6:15pm'}
-					location={' Santos, SP'}
-					image={RodrigoMarques}
-				/>
-				</ScrollView>
+				<ListEvents horizontal />
 
 				<BannerMedium/>
 				

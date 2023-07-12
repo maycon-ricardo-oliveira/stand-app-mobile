@@ -4,11 +4,11 @@ import { Text, View } from 'react-native';
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 
-type Props = {
+export type EventStatusProps = {
   status: 'done' | 'sold_off' | 'ending' | 'available'
 }
 
-export function EventStatus({ status, ...rest }: Props) {
+export function EventStatus({ status, ...rest }: EventStatusProps) {
   const { success900, success000, error, error000, alert, alert000 } = theme.colors;
 
   function render() {

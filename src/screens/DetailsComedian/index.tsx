@@ -1,7 +1,9 @@
 import React, { useCallback, useState } from "react";
 import { Text, Image, View, FlatList } from "react-native";
 import { Backgound } from "../../components/Background";
-import { StackTypes, TopTabGroup } from "../../routes/stack";
+import { StackTypes } from "../../routes/stack";
+import { TopTabGroup } from "../../routes/toptabs";
+
 import { NavigationContainer, useFocusEffect, useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
 import { Tab, Text as Rtext, TabView } from '@rneui/themed';
@@ -17,7 +19,6 @@ import AlbumSvg from '../../assets/album.svg';
 import PlainSvg from '../../assets/plain.svg';
 import StarCircleSvg from '../../assets/star-circle.svg';
 import { TabMenu } from "../../components/TabMenu";
-import TopTabNavigator, { MyTabs } from "../../routes/toptabs";
 
 const RenatoAlbaniPng = require('../../assets/RenatoAlbani.png') ;
 const RenatoAlbani = require('../../assets/eventImage.png');

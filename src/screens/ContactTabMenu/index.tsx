@@ -7,10 +7,8 @@ import { StackTypes } from "../../routes/stack";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
 import { styles } from './styles';
-import Title from "../../components/Title";
-import { ListEvents } from "../../components/ListEvents";
 
-export default function EventsTabMenu(){
+export default function ContactTabMenu(){
 	const navigation = useNavigation<StackTypes>();
 	const [email, setEmail] = useState('');
 	const [error, setError] = useState(false);
@@ -23,10 +21,10 @@ export default function EventsTabMenu(){
 
 	return (
 		<View style={styles.background}>
-			<Title title="Próximos shows"/>
-			<View style={styles.container}>
-				<ListEvents horizontal={false} />
-			</View>
+			<Header
+				title="Contact tab menu"
+			/>
+
 		</View>
 	)
 }

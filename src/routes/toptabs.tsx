@@ -1,9 +1,14 @@
 import * as React from 'react';
-import { NativeStackNavigationProp, createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createMaterialTopTabNavigator, MaterialTopTabNavigationProp } from '@react-navigation/material-top-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import EventsTabMenu from '../screens/EventsTabMenu';
 import AlbumTabMenu from '../screens/AlbumTabMenu';
-import { Text, View } from 'react-native';
+
+import Ionic from 'react-native-vector-icons/Ionicons';
+
+
+import AlbumSvg from '../assets/album.svg';
+import { theme } from '../global/styles/theme';
+import ContactTabMenu from '../screens/ContactTabMenu';
 
 type TopTabNavigation = {
   TabMenuEvents: any | undefined;
@@ -11,79 +16,47 @@ type TopTabNavigation = {
   TabMenuContact: any | undefined;
 }
 
+const {violet, purple, black, blueNight} = theme.colors;
 
-const Tab = createMaterialTopTabNavigator();
 
-const TopTabNavigator = () => {
+const TopTab = createMaterialTopTabNavigator();
+
+export const TopTabGroup = () => {
   return (
-    <Tab.Navigator initialRouteName="Feed"
-    screenOptions={{
-      tabBarActiveTintColor: '#e91e63',
-      tabBarLabelStyle: { fontSize: 12 },
-      tabBarStyle: { backgroundColor: 'powderblue' },
-    }}>
-      <Tab.Screen name="EventsTabMenu" component={EventsTabMenu} options={{ tabBarLabel: 'eventos' }}/>
-      <Tab.Screen name="AlbumTabMenu" component={AlbumTabMenu} options={{ tabBarLabel: 'album' }}/>
-    </Tab.Navigator>
-  );
-}
 
+    <TopTab.Navigator 
+    screenOptions={({route, navigation}) => ({
+      tabBarIcon: ({color, focused}) => {
+        let iconName = '';
 
-export type TopTabTypesTypes = MaterialTopTabNavigationProp<TopTabNavigation>;
-export default TopTabNavigator;
+        if (route.name === 'Album') {
+          iconName = focused ? "albums" : "albums-outline"
+        }else if (route.name === 'Events') {
+          iconName = focused ? "mic" : "mic-outline"
+        }else if (route.name === 'Contact') {
+          iconName = focused ? "paper-plane" : "paper-plane-outline"
+        }else if (route.name === 'Avaliation') {
+          //return <AlbumSvg />
+          iconName = focused ? "star" : "star-outline"
+        }
+        
+        return <Ionic color={color} name={iconName} size={24}/>
 
+      },
+      tabBarShowLabel: false,
+      tabBarActiveTintColor: violet,
+      tabBarStyle: { backgroundColor: blueNight },
+      tabBarIndicatorStyle: { backgroundColor: purple },
+      tabBarContentContainerStyle: { backgroundColor: blueNight },
+      tabBarShowIcon: true,
 
+    })} >
+      <TopTab.Screen name="Events" component={EventsTabMenu} />
+      <TopTab.Screen name="Album" component={AlbumTabMenu}  />
+      <TopTab.Screen name="Contact" component={ContactTabMenu} />
+      <TopTab.Screen name="Avaliation" component={ContactTabMenu} />
 
-
-function FeedScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Feed!</Text>
-    </View>
-  );
-}
-
-function NotificationsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications!</Text>
-    </View>
-  );
-}
-
-function ProfileScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile!</Text>
-    </View>
-  );
-}
-
-export function MyTabs() {
-  return (
-    <Tab.Navigator
-      initialRouteName="Feed"
-      screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
-        tabBarLabelStyle: { fontSize: 12 },
-        tabBarStyle: { backgroundColor: 'powderblue' },
-      }}
-    >
-      <Tab.Screen
-        name="Feed"
-        component={FeedScreen}
-        options={{ tabBarLabel: 'Home' }}
-      />
-      <Tab.Screen
-        name="Notifications"
-        component={NotificationsScreen}
-        options={{ tabBarLabel: 'Updates' }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={ProfileScreen}
-        options={{ tabBarLabel: 'Profile' }}
-      />
-    </Tab.Navigator>
+    </TopTab.Navigator>
+    
   );
 }
