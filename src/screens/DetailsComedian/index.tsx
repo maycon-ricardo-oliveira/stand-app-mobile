@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from "react";
 import { Text, Image, View, FlatList } from "react-native";
 import { Backgound } from "../../components/Background";
-import { StackTypes } from "../../routes/stack";
-import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { StackTypes, TopTabGroup } from "../../routes/stack";
+import { NavigationContainer, useFocusEffect, useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
 import { Tab, Text as Rtext, TabView } from '@rneui/themed';
 
@@ -16,9 +16,11 @@ import MicSvg from '../../assets/microphone.svg';
 import AlbumSvg from '../../assets/album.svg';
 import PlainSvg from '../../assets/plain.svg';
 import StarCircleSvg from '../../assets/star-circle.svg';
+import { TabMenu } from "../../components/TabMenu";
+import TopTabNavigator, { MyTabs } from "../../routes/toptabs";
 
 const RenatoAlbaniPng = require('../../assets/RenatoAlbani.png') ;
-
+const RenatoAlbani = require('../../assets/eventImage.png');
 
 export type ComedianDetailsProps = {
 	id: string;
@@ -37,7 +39,7 @@ export default function DetailsComedian({ route, navigation }: any) {
 
   const { violet, grey } = theme.colors;
 	async function loadComedian() {
-    const comedianData = await 
+    const comedianData = await
       {
         id: '1',
         comedianName: 'Renato Albani',
@@ -57,11 +59,13 @@ export default function DetailsComedian({ route, navigation }: any) {
   }, []));
 
 	return (
-		<Backgound gradient={false}>
+<>
+    <View style={{height: 500}}>
+    <Backgound gradient={false}>
 			<View style={styles.container}>
-      <Image
+       <Image
         style={styles.mainImage} 
-        source={RenatoAlbaniPng}
+        source={RenatoAlbani}
       />
         <View style={styles.content}>
           <Title title={"Renato Albani"} />
@@ -83,46 +87,12 @@ export default function DetailsComedian({ route, navigation }: any) {
             </View>
             
           </View>
-          <Tab
-            value={index}
-            onChange={(e) => setIndex(e)}
-            indicatorStyle={{
-              backgroundColor: violet,
-              height: 3,
-            }}
-            variant="default"
-          >
-            <Tab.Item
-              titleStyle={{ fontSize: 12 }}
-              icon={<MicSvg width={24} height={24} fill={index == 0 ? violet : grey} />}
-            />
-            <Tab.Item 
-              titleStyle={{ fontSize: 12 }}
-              icon={<AlbumSvg width={24} height={24}  fill={index == 1 ? violet : grey} />}
-            />
-            <Tab.Item
-              titleStyle={{ fontSize: 12 }}
-              icon={<PlainSvg width={24} height={24} fill={index == 2 ? violet : grey} />}      
-            />
-            <Tab.Item
-              titleStyle={{ fontSize: 12 }}
-              icon={<StarCircleSvg width={24} height={24} fill={index == 3 ? violet : grey} />}   
-            />
-          </Tab>
-
-          <TabView value={index} onChange={setIndex} animationType="spring">
-            <TabView.Item style={{ backgroundColor: 'red', width: '100%' }}>
-              <Rtext h1>Recent</Rtext>
-            </TabView.Item>
-            <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>
-              <Rtext h1>Favorite</Rtext>
-            </TabView.Item>
-            <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>
-              <Rtext h1>Cart</Rtext>
-            </TabView.Item>
-          </TabView>
         </View>
 			</View>
 		</Backgound>
+    </View>
+
+    <TopTabGroup/>
+    </>
 	)
 }

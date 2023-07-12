@@ -49,7 +49,8 @@ export const styles = StyleSheet.create({
 	},
 	iconSelected: {
 		color: theme.colors.error
-	}
+	},
+	
 	
 
 });
