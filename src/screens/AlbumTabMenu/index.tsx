@@ -7,6 +7,8 @@ import { StackTypes } from "../../routes/stack";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
 import { styles } from './styles';
+import Title from "../../components/Title";
+import { ListPictures } from "../../components/ListPictures";
 
 export default function AlbumTabMenu(){
 	const navigation = useNavigation<StackTypes>();
@@ -21,11 +23,9 @@ export default function AlbumTabMenu(){
 
 	return (
 		<View style={styles.background}>
-			<Header
-				title="Album tab menu"
-			/>
+			<Title title="Imagens do homorista"/>
 			<View style={styles.container}>
-
+				<ListPictures />
 			</View>
 		</View>
 	)
