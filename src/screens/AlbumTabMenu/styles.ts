@@ -4,11 +4,11 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
 	background: {
 		flex: 1,
-		backgroundColor: theme.colors.blueNight
+		backgroundColor: theme.colors.blueNight,
+		paddingHorizontal: 20,
 	},
 	container: {
 		flex: 1,
-		paddingHorizontal: 24,
 	},
   content: {
 		flex: 1,

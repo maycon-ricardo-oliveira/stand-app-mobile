@@ -7,14 +7,28 @@ const {height, width} = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   events: {
-		backgroundColor: theme.colors.alert,
 		marginTop: 16,
-		marginBottom: 20,
-		flex: 1,
+		width: '100%',
+		height: '100%'
+
 	},
-	image: {
-		width: 90,
-    height: 90,
+	imagesContainer: {
+		flexWrap: 'wrap',
+		alignItems: 'center',
+		gap: 10,
+	  flexDirection: 'row',
+		justifyContent: 'space-between'
+	},
+	imageCard: {
+		width: 114,
+		height: 130,
+		marginVertical: 2,
+	},
+	image:{
+		width: '100%', 
+		height: '100%', 
+		resizeMode: 'cover',
+		borderRadius: 8
 	}
   
 });
