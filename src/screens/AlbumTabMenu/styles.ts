@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: theme.colors.blueNight,
 		paddingHorizontal: 20,
+		paddingTop: 20,
 	},
 	container: {
 		flex: 1,

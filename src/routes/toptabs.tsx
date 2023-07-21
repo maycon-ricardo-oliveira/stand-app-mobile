@@ -25,36 +25,37 @@ export const TopTabGroup = () => {
   return (
 
     <TopTab.Navigator 
-    screenOptions={({route, navigation}) => ({
-      tabBarIcon: ({color, focused}) => {
-        let iconName = '';
+      screenOptions={({route, navigation}) => ({
+        tabBarIcon: ({color, focused}) => {
+          let iconName = '';
 
-        if (route.name === 'Album') {
-          iconName = focused ? "albums" : "albums-outline"
-        }else if (route.name === 'Events') {
-          iconName = focused ? "mic" : "mic-outline"
-        }else if (route.name === 'Contact') {
-          iconName = focused ? "paper-plane" : "paper-plane-outline"
-        }else if (route.name === 'Avaliation') {
-          //return <AlbumSvg />
-          iconName = focused ? "star" : "star-outline"
-        }
-        
-        return <Ionic color={color} name={iconName} size={24}/>
+          if (route.name === 'Album') {
+            iconName = focused ? "albums" : "albums-outline"
+          }else if (route.name === 'Events') {
+            iconName = focused ? "mic" : "mic-outline"
+          }else if (route.name === 'Contact') {
+            iconName = focused ? "paper-plane" : "paper-plane-outline"
+          }else if (route.name === 'Avaliation') {
+            //return <AlbumSvg />
+            iconName = focused ? "star" : "star-outline"
+          }
+          
+          return <Ionic color={color} name={iconName} size={24}/>
 
-      },
-      tabBarShowLabel: false,
-      tabBarActiveTintColor: violet,
-      tabBarStyle: { backgroundColor: blueNight },
-      tabBarIndicatorStyle: { backgroundColor: purple },
-      tabBarContentContainerStyle: { backgroundColor: blueNight },
-      tabBarShowIcon: true,
+        },
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: violet,
+        tabBarStyle: { backgroundColor: blueNight },
+        tabBarIndicatorStyle: { backgroundColor: purple },
+        tabBarContentContainerStyle: { backgroundColor: blueNight },
+        tabBarShowIcon: true,
 
-    })} >
+      })}
+    >
       <TopTab.Screen name="Events" component={EventsTabMenu} />
       <TopTab.Screen name="Album" component={AlbumTabMenu}  />
       <TopTab.Screen name="Contact" component={ContactTabMenu} />
-      <TopTab.Screen name="Avaliation" component={ContactTabMenu} />
+      {/* <TopTab.Screen name="Avaliation" component={ContactTabMenu} /> */}
 
     </TopTab.Navigator>
     

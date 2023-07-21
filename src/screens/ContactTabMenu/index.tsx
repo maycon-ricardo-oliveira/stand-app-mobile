@@ -5,12 +5,9 @@ import { Link, useNavigation } from "@react-navigation/native";
 import { styles } from './styles';
 import Title from "../../components/Title";
 import { theme } from '../../global/styles/theme';
-import { FaTiktok , FaFacebook, FaYoutube} from "react-icons/fa";
-import { AiFillInstagram} from "react-icons/ai";
 import FAIcon from 'react-native-vector-icons/FontAwesome5';
 import ADIcon from 'react-native-vector-icons/AntDesign';
 import { Divisor } from "../../components/Divisor";
-
 
 export default function ContactTabMenu(){
 	const navigation = useNavigation<StackTypes>();
@@ -28,14 +25,17 @@ export default function ContactTabMenu(){
 	return (
 		<View style={styles.background}>
 			<Title title="Contato da acessoria"/>
-			<Text>
-			(85) 90000 - 0000 / WhatasApp
-			</Text>
+			<TouchableOpacity >
+				<Text style={styles.text}>
+				(85) 90000 - 0000 / WhatasApp
+				</Text>
+			</TouchableOpacity>
+			<Separator/>
 			<Title title="Email"/>
 
 			<TouchableOpacity >
 				<Text style={styles.text}>
-					(85) 90000 - 0000 / WhatasApp
+					email.exemplo@gmail.com
 				</Text>
 			</TouchableOpacity>
 			<Separator/>

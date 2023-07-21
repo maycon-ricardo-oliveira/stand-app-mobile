@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: theme.colors.blueNight,
 		paddingHorizontal: 20,
+		paddingTop: 20,
 	},
 	container: {
 
@@ -23,9 +24,7 @@ export const styles = StyleSheet.create({
 		lineHeight: 24,
 		fontFamily: theme.fonts.text400,
 		fontWeight: '500',
-		marginBottom: 24,
 		marginTop: 8,
-		marginLeft: 8
 	},
 	separator: {
 		marginTop: 12,
