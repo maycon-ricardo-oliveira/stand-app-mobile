@@ -9,6 +9,7 @@ import VerifyEmail from '../screens/VerifyEmail';
 import AllComedians from '../screens/AllComedians';
 import Locations from '../screens/Locations';
 import DetailsComedian from '../screens/DetailsComedian';
+import DetailsEvent from '../screens/DetailsEvent';
 
 const RenatoAlbani = require('../assets/eventImage.png');
 type StackNavigation = {
@@ -21,6 +22,7 @@ type StackNavigation = {
   AllComedians: undefined;
   Locations: undefined;
   DetailsComedian: any | undefined;
+  DetailsEvent: any | undefined;
 }
 
 export type StackTypes = NativeStackNavigationProp<StackNavigation>;
@@ -38,6 +40,8 @@ const StackNavigator = () => {
       <Stack.Screen name="AllComedians" component={AllComedians} />
       <Stack.Screen name="Locations" component={Locations} />
       <Stack.Screen name="DetailsComedian" component={DetailsComedian} initialParams={{ id: '1234' }} />
+      <Stack.Screen name="DetailsEvent" component={DetailsEvent} initialParams={{ id: '1234' }} />
+
     </Stack.Navigator>
   );
 };

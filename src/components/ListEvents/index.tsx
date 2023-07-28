@@ -4,7 +4,8 @@ import { FlatList, Image, ScrollView, Text, TouchableOpacity, TouchableOpacityPr
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 import { CardEvent, EventProps } from '../CardEvent';
-import { useFocusEffect } from '@react-navigation/native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
+import { StackTypes } from '../../routes/stack';
 
 
 type Props = {
@@ -15,9 +16,18 @@ const RenatoAlbani = require('../../assets/eventImage.png');
 const RodrigoMarques = require('../../assets/RodrigoMarques.png');
 
 export function ListEvents({ events, horizontal, ...rest }: Props) {
+  const navigation = useNavigation<StackTypes>();
+
   const { violet, success200, error200 } = theme.colors;
 
   const [eventsData, setEvents] = useState<Array<EventProps>>([]);
+
+  function handleEventDetails(event: EventProps) {
+    console.log('open event');
+		navigation.navigate('DetailsEvent', {
+			id: event.id
+		})
+	}
 
   function loadEvents() {
 
@@ -74,6 +84,7 @@ export function ListEvents({ events, horizontal, ...rest }: Props) {
           <CardEvent
             width={horizontal ? 311 : 340}
             data={item}
+            onPress={() => handleEventDetails(item)}
           />
         </View>
       )}

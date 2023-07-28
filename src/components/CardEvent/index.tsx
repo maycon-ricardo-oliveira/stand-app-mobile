@@ -5,8 +5,10 @@ import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 import { EventStatus, EventStatusProps } from '../EventStatus';
 import { Classification, ClassificationProps } from '../Classfication';
+import { NavigationContainer, useFocusEffect, useNavigation } from "@react-navigation/native";
+import { StackTypes } from '../../routes/stack';
 
-export type EventProps = TouchableOpacityProps & {
+export type EventProps = {
   id: string;
   title: string;
   comedianName: string;
@@ -17,12 +19,16 @@ export type EventProps = TouchableOpacityProps & {
   status: EventStatusProps;
 }
 
-type Props = {
+type Props = TouchableOpacityProps & {
   width: number;
   data: EventProps
 }
 
 export function CardEvent({ data, width, ...rest }: Props) {
+
+  const navigation = useNavigation<StackTypes>();
+
+
   const { violet, success200, error200 } = theme.colors;
 
   function serializeTitle(){
@@ -31,6 +37,7 @@ export function CardEvent({ data, width, ...rest }: Props) {
     }
     return data.title
   }
+
   return (
     <TouchableOpacity style={[styles.container, {width: width}
     ]} {...rest}>

@@ -8,6 +8,7 @@ import { theme } from '../../global/styles/theme';
 import FAIcon from 'react-native-vector-icons/FontAwesome5';
 import ADIcon from 'react-native-vector-icons/AntDesign';
 import { Divisor } from "../../components/Divisor";
+import { Separator } from "../../components/Separator";
 
 export default function ContactTabMenu(){
 	const navigation = useNavigation<StackTypes>();
@@ -86,13 +87,6 @@ function BoxSocialMedia({children}: Props) {
 	return (
 		<View style={styles.boxSocialMedia}>
 			{children}
-		</View>
-	)
-}
-
-function Separator() {
-	return (
-		<View style={styles.separator}>
 		</View>
 	)
 }

@@ -5,7 +5,7 @@ import { styles } from './styles';
 import MainBanner from '../../components/MainBanner';
 import { AroundYou } from '../../components/AroundYou';
 import BannerMedium from '../../components/BannerMedium';
-import { CardEvent } from '../../components/CardEvent';
+import { CardEvent, EventProps } from '../../components/CardEvent';
 import SeeAll from '../../components/SeeAll';
 import { CardComedian, ComedianProps } from '../../components/CardComedian';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
