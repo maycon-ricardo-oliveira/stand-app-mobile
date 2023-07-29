@@ -103,12 +103,11 @@ export default function DetailsEvent({ route }: any) {
     )
   }
 
-
   useFocusEffect(useCallback(() => {
     console.log( `route params Id: ${id}`)
     loadEvent();
   }, []));
-
+  
 	return (
     <Backgound gradient={false}>
       <View style={styles.container}>
@@ -120,7 +119,7 @@ export default function DetailsEvent({ route }: any) {
         >
           <Image
             style={styles.mainImage} 
-            source={RenatoAlbani}
+            source={RenatoAlbaniPng}
           />
           <View style={styles.content}>
             <Title title={serializeTitle()} />
