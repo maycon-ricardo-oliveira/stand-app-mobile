@@ -1,24 +1,23 @@
 import React, { useCallback, useState } from 'react';
-import { FlatList, Image, ScrollView, Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
+import { FlatList, View } from 'react-native';
 
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 import { CardEvent, EventProps } from '../CardEvent';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { StackTypes } from '../../routes/stack';
-
+import GetAttractionsByComedianController from '../../domain/controllers/GetAttractionsByComedianController';
 
 type Props = {
   events?: Array<EventProps>;
+  comedianId: string;
   horizontal: boolean;
 }
 const RenatoAlbani = require('../../assets/eventImage.png');
 const RodrigoMarques = require('../../assets/RodrigoMarques.png');
 
-export function ListEvents({ events, horizontal, ...rest }: Props) {
+export function ListEventsByComedian({ events, horizontal, comedianId, ...rest }: Props) {
   const navigation = useNavigation<StackTypes>();
-
-  const { violet, success200, error200 } = theme.colors;
 
   const [eventsData, setEvents] = useState<Array<EventProps>>([]);
 
@@ -29,7 +28,10 @@ export function ListEvents({ events, horizontal, ...rest }: Props) {
 		})
 	}
 
-  function loadEvents() {
+  async function loadEvents() {
+
+    const controller = new GetAttractionsByComedianController();
+    const output = await controller.execute(comedianId);
 
     setEvents(
       [

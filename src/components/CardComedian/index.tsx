@@ -7,6 +7,7 @@ import { EventStatus } from '../EventStatus';
 
 import PalletSvg from '../../assets/palette.svg';
 import OnFireSvg from '../../assets/on-fire.svg';
+import Comedian from '../../domain/entities/Comedian';
 
 export type ComedianProps = {
   id: string;
@@ -18,23 +19,23 @@ export type ComedianProps = {
 }
 
 type Props = TouchableOpacityProps & {
-  data: ComedianProps;
+  data: Comedian;
 }
 
 export function CardComedian({ data, ...rest }: Props) {
   const { violet, success200, error200 } = theme.colors;
 
   function serializeComedianName(){
-    if (data.comedianName.length > 18) {
-      return data.comedianName.slice(0, 15) + '...';
+    if (data.name.length > 18) {
+      return data.name.slice(0, 15) + '...';
     }
-    return data.comedianName
+    return data.name
   }
   return (
     <TouchableOpacity style={[styles.container,
     ]} {...rest}>
       <Image 
-				source={{uri: data.image}} 
+				source={{uri: data.thumbnail}} 
 				style={styles.image}
       />
 
@@ -49,7 +50,7 @@ export function CardComedian({ data, ...rest }: Props) {
             <Text style={[styles.typeText, {marginLeft: 4}]}>Show Solo</Text>
           </View>
         </View>
-        { data.onFire && 
+        { data.onFire  && 
           <View style={styles.type}>
             <Text style={[styles.typeText, {marginRight: 4}]}>Em alta</Text>
             <OnFireSvg width={16} height={16}/> 

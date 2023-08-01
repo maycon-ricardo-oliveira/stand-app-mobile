@@ -10,6 +10,7 @@ import AllComedians from '../screens/AllComedians';
 import Locations from '../screens/Locations';
 import DetailsComedian from '../screens/DetailsComedian';
 import DetailsEvent from '../screens/DetailsEvent';
+import Comedian from '../domain/entities/Comedian';
 
 const RenatoAlbani = require('../assets/eventImage.png');
 type StackNavigation = {
@@ -39,7 +40,7 @@ const StackNavigator = () => {
       <Stack.Screen name="VerifyEmail" component={VerifyEmail} />
       <Stack.Screen name="AllComedians" component={AllComedians} />
       <Stack.Screen name="Locations" component={Locations} />
-      <Stack.Screen name="DetailsComedian" component={DetailsComedian} initialParams={{ id: '1234' }} />
+      <Stack.Screen name="DetailsComedian" component={DetailsComedian} />
       <Stack.Screen name="DetailsEvent" component={DetailsEvent} initialParams={{ id: '1234' }} />
 
     </Stack.Navigator>

@@ -8,6 +8,9 @@ export default class StandAppGatewayMemory implements StandAppGateway {
 	constructor (readonly httpClient: HttpClient, readonly baseUrl: string) {
 
 	}
+	getAllComedians(): Promise<any[]> {
+		throw new Error("Method not implemented.");
+	}
 	getPlaceById(placeId: string): Promise<any> {
 		throw new Error("Method not implemented.");
 	}

@@ -5,7 +5,7 @@ import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 
 export type EventStatusProps = {
-  status: 'done' | 'sold_off' | 'ending' | 'available'
+  status: 'finish' | 'sold_off' | 'ending' | 'available'
 }
 
 export function EventStatus({ status, ...rest }: EventStatusProps) {
@@ -14,7 +14,7 @@ export function EventStatus({ status, ...rest }: EventStatusProps) {
   function render() {
     switch(status) {
 
-      case "done": return (
+      case "finish": return (
         <View style={[styles.container, { backgroundColor: success000}]}>
           <Text style={[styles.text, { color: success900}]}>Disponível</Text>
         </View>

@@ -1,27 +1,14 @@
 import React, { useCallback, useState } from "react";
 import { Text, Image, View, FlatList } from "react-native";
-import { Backgound } from "../../components/Background";
-import { StackTypes } from "../../routes/stack";
-import { TopTabGroup } from "../../routes/toptabs";
-
-import { NavigationContainer, useFocusEffect, useNavigation } from "@react-navigation/native";
-import { Header } from "../../components/Header";
-import { Tab, Text as Rtext, TabView } from '@rneui/themed';
-
-import { theme } from '../../global/styles/theme';
+import { useFocusEffect } from "@react-navigation/native";
 
 import { styles } from './styles';
-import { CardComedian, ComedianProps } from "../../components/CardComedian";
 import Title from "../../components/Title";
-
-import MicSvg from '../../assets/microphone.svg';
-import AlbumSvg from '../../assets/album.svg';
-import PlainSvg from '../../assets/plain.svg';
-import StarCircleSvg from '../../assets/star-circle.svg';
-import { TabMenu } from "../../components/TabMenu";
-
-const RenatoAlbaniPng = require('../../assets/RenatoAlbani.png') ;
-const RenatoAlbani = require('../../assets/eventImage.png');
+import GetComedianByIdController from "../../domain/controllers/GetComedianByIdController";
+import Comedian from "../../domain/entities/Comedian";
+import ComedianMeta from "../../domain/entities/ComedianMeta";
+import { Backgound } from "../../components/Background";
+import { TopTabGroup } from "../../routes/toptabs";
 
 export type ComedianDetailsProps = {
 	id: string;
@@ -33,67 +20,68 @@ type Props = {
 
 export default function DetailsComedian({ route, navigation }: any) {
 
-	const { id } = route.params;
-  const [index, setIndex] = useState(0);
-  const [comedian, setComedian] = useState<ComedianProps>();
+	const { comedian } = route.params;
+  const [comedianData, setComedianData] = useState<Comedian>(comedian);
+  const [tags, setTags] = useState<ComedianMeta[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const { violet, grey } = theme.colors;
 	async function loadComedian() {
-    const comedianData = await
-      {
-        id: '1',
-        comedianName: 'Renato Albani',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fafonso-padilha.png?alt=media&token=83ee597e-e43d-4586-922c-248b4274f5aa',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
+
+    const controller = new GetComedianByIdController();
+    const output = await controller.execute(comedian.id);
+
+    let tagsData:ComedianMeta[] = [];
+
+    comedianData.metas.map((meta) => {
+      if (meta.name == 'tag') {
+        tagsData.push(meta)
       }
-		
-    setComedian(comedianData)
+    })
+
+    setComedianData(output)
+    setTags(tagsData)
     setLoading(false)
 	}
 
   useFocusEffect(useCallback(() => {
-    console.log( `route params Id: ${id}`)
     loadComedian();
   }, []));
 
 	return (
-<>
-    <View style={{height: 500}}>
-    <Backgound gradient={false}>
-			<View style={styles.container}>
-       <Image
-        style={styles.mainImage} 
-        source={RenatoAlbani}
-      />
-        <View style={styles.content}>
-          <Title title={"Renato Albani"} />
-          <Text style={styles.description}>Descrição</Text>
+    <>
+      <View style={{height: 500}}>
+        <Backgound gradient={false}>
+          <View style={styles.container}>
+          <Image
+            style={styles.mainImage} 
+            source={{uri: comedian.imageMain}} 
+          />
+            <View style={styles.content}>
+              <Title title={comedian.name} />
+              <Text style={styles.description}>{comedian.miniBio}</Text>
 
-          <View style={styles.tags}>
+              <FlatList style={styles.tags}
+                data={tags}
+                keyExtractor={item => String(item.id)}
+                contentContainerStyle={{ paddingBottom: 24 }}
+                showsVerticalScrollIndicator={false}
+                showsHorizontalScrollIndicator={false}
+                horizontal
+                renderItem={({ item }) => {
+                return (
+                  <View style={styles.tag}>
+                    <Text style={styles.tagText}>{item.value}</Text>
+                  </View>
+                )
+                }}
+              />
 
-            <View style={styles.tag}>
-              <Text style={styles.tagText}>Para toda familha</Text>
             </View>
-            <View style={styles.tag}>
-              <Text style={styles.tagText}>Show solo</Text>
-            </View>
-            <View style={styles.tag}>
-              <Text style={styles.tagText}>Piadas leves</Text>
-            </View>
-            <View style={styles.tag}>
-              <Text style={styles.tagText}>Comedy Club</Text>
-            </View>
-            
           </View>
-        </View>
-			</View>
-		</Backgound>
-    </View>
+        </Backgound>
+      </View>
 
-    <TopTabGroup/>
+      <TopTabGroup comedianId={ comedian.id}/>
     </>
 	)
 }

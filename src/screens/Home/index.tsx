@@ -19,11 +19,17 @@ import BannerSmall from '../../components/BannerSmall';
 import { ButtonLike } from '../../components/ButtonLike';
 import { ButtonLocation } from '../../components/ButtonLocation';
 import { ListEvents } from '../../components/ListEvents';
+import GetAllComediansController from '../../domain/controllers/GetAllComediansController';
+import AxiosAdapter from '../../domain/adapters/AxiosAdapter';
+import StandAppGatewayHttp from '../../domain/gateways/StandAppGatewayHttp';
+import GetAllComedians from '../../domain/useCases/GetAllComedians';
+import GetComedianById from '../../domain/useCases/GetComedianById';
+import Comedian from '../../domain/entities/Comedian';
 
 export default function Home () {
 
 	const navigation = useNavigation<StackTypes>();
-	const [comedians, setComedians] = useState<ComedianProps[]>([]);
+	const [comedians, setComedians] = useState<Comedian[]>([]);
 	
 	function handleShowAllComedians() {
 		navigation.navigate('AllComedians')
@@ -34,64 +40,14 @@ export default function Home () {
 	}
 
 	async function loadComedians() {
-    const  comediansData = await [
-      {
-        id: '1',
-        comedianName: 'Renato Albani',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fafonso-padilha.png?alt=media&token=83ee597e-e43d-4586-922c-248b4274f5aa',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
-      },
-      {
-        id: '2',
-        comedianName: 'Rodrigo Marques',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fafonso-padilha.png?alt=media&token=83ee597e-e43d-4586-922c-248b4274f5aa',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
-      },
-      {
-        id: '3',
-        comedianName: 'Bruna Louise',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fbruna-louise.png?alt=media&token=47fbc753-5c41-4a8f-a66a-0e51c14cb790',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
-      },
-      {
-        id: '4',
-        comedianName: 'Renato Albani',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fafonso-padilha.png?alt=media&token=83ee597e-e43d-4586-922c-248b4274f5aa',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
-      },
-      {
-        id: '5',
-        comedianName: 'Renato Albani',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fafonso-padilha.png?alt=media&token=83ee597e-e43d-4586-922c-248b4274f5aa',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
-      },
-      {
-        id: '6',
-        comedianName: 'Renato Albani',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stand-app-380304.appspot.com/o/comedians%2Fafonso-padilha.png?alt=media&token=83ee597e-e43d-4586-922c-248b4274f5aa',
-        type: 'solo',
-        onFire: true,
-        fullWidth: false,
-      },
-
-    ]
-		
-    setComedians(comediansData)
+		const useCase = new GetAllComediansController();
+  	const ouput = await useCase.execute();
+    setComedians(ouput)
 	}
 
-	function handleComedianDetails(comedian: ComedianProps) {
+	function handleComedianDetails(comedian: Comedian) {
 		navigation.navigate('DetailsComedian', {
-			id: comedian.id	
+			comedian
 		})
 	}
 

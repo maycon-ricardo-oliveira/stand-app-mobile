@@ -21,7 +21,13 @@ const {violet, purple, black, blueNight} = theme.colors;
 
 const TopTab = createMaterialTopTabNavigator();
 
-export const TopTabGroup = () => {
+type Props = {
+  comedianId: string;
+}
+
+
+export const TopTabGroup = ({ comedianId } : Props) => {
+
   return (
 
     <TopTab.Navigator 
@@ -49,12 +55,12 @@ export const TopTabGroup = () => {
         tabBarIndicatorStyle: { backgroundColor: purple },
         tabBarContentContainerStyle: { backgroundColor: blueNight },
         tabBarShowIcon: true,
-
+        
       })}
     >
-      <TopTab.Screen name="Events" component={EventsTabMenu} />
-      <TopTab.Screen name="Album" component={AlbumTabMenu}  />
-      <TopTab.Screen name="Contact" component={ContactTabMenu} />
+      <TopTab.Screen name="Events" component={EventsTabMenu} initialParams={{ comedianId }}/>
+      <TopTab.Screen name="Album" component={AlbumTabMenu} initialParams={{ comedianId }}/>
+      <TopTab.Screen name="Contact" component={ContactTabMenu} initialParams={{ comedianId }}/>
       {/* <TopTab.Screen name="Avaliation" component={ContactTabMenu} /> */}
 
     </TopTab.Navigator>

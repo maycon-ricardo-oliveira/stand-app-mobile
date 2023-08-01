@@ -9,9 +9,10 @@ import { Header } from "../../components/Header";
 import { styles } from './styles';
 import Title from "../../components/Title";
 import { ListEvents } from "../../components/ListEvents";
+import { ListEventsByComedian } from "../../components/ListEventsByComedian";
 
-export default function EventsTabMenu(){
-	const navigation = useNavigation<StackTypes>();
+export default function EventsTabMenu({ route, navigation }: any){
+	const { comedianId } = route.params;
 	const [email, setEmail] = useState('');
 	const [error, setError] = useState(false);
 
@@ -21,11 +22,13 @@ export default function EventsTabMenu(){
 		setError(!error);
 	}
 
+	console.log('teste route params', comedianId)
+
 	return (
 		<View style={styles.background}>
 			<Title title="Próximos shows"/>
 			<View style={styles.container}>
-				<ListEvents horizontal={false} />
+				<ListEventsByComedian horizontal={false} comedianId={comedianId}/>
 			</View>
 		</View>
 	)
