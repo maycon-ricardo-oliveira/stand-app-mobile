@@ -13,4 +13,7 @@ To run android
 npx expo start -a
 
 To run ios
-npx expo start -i
+npx expo start -i     
+
+
+

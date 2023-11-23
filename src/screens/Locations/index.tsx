@@ -16,6 +16,9 @@ import MapPointSvg from '../../assets/map-point.svg'
 import { Divisor } from "../../components/Divisor";
 import { ModalAlertLocation } from "../../components/ModalAlertLocation";
 import SearchLocations from "../../components/SearchLocations";
+import StorageAdapter from "../../domain/adapters/StorageAdapter";
+import Location from "../../domain/entities/Location";
+import Address from "../../domain/entities/Address";
 
 type ItemProps = {
 	title: string;
@@ -31,7 +34,7 @@ export default function Locations() {
   const [loading, setLoading] = useState(true);
   const [openModal, setOpenModal ] = useState(false);
   const [seachFocus, setSeachFocus] = useState(false);
-  const [currentLocation, setCurrentLocation] = useState('')
+  const [currentLocation, setCurrentLocation] = useState(' Rua Sargento Antonio Monsenhor Tabosa, 809 - Jardim Americano - Fortaleza ')
 
   function handleOpenModal() {
     setOpenModal(!openModal)
@@ -39,6 +42,15 @@ export default function Locations() {
 
   function handleComedianDetails(item: ItemProps) {
     console.log('navigate to comedian details:  ' + item.title)
+  }
+
+  function handleSetCurrentLocation(location: any) {
+
+    console.log("current location", location)
+    const adapter = new StorageAdapter();
+
+    adapter.store('current-location', location);
+
   }
 
   useFocusEffect(useCallback(() => {
@@ -62,7 +74,7 @@ export default function Locations() {
               <TargetSvg  style={styles.targetIcon} width={32} height={32}/>
               <View style={styles.textContainer}>
                 <Text style={styles.title}>Usar minha localização atual</Text>
-                <Text style={styles.text}>Rua Sargento Antonio Monsenhor Tabosa, 809 - Jardim Americano - Fortaleza </Text>
+                <Text style={styles.text}>{currentLocation}</Text>
               </View>
               <View style={styles.checkbox}>
                 <Checkbox isChecked={true} isError={false} checkBoxColor={"white"}/>
@@ -76,10 +88,29 @@ export default function Locations() {
       </View>
 
       <GooglePlacesAutocomplete
-      placeholder='Pesquisar'
+        placeholder='Pesquisar'
       onPress={(data, details = null) => {
-        // 'details' is provided when fetchDetails = true
-        console.log(data, details);
+        if (details != null) {
+          const currentLocation = new Location(
+            data.description,
+            details?.geometry.location.lat.toString(),
+            details?.geometry.location.lng.toString(),
+            new Address(
+              details.address_components[0].short_name,
+              details.address_components[1].short_name,
+              details.address_components[2].short_name,
+              details.address_components[3].short_name,
+              details.address_components[4].short_name,
+              details.address_components[5].short_name,
+              details.formatted_address
+            )
+          );
+
+          handleSetCurrentLocation(currentLocation);
+        }
+
+        setCurrentLocation(data.description)
+
       }}
       fetchDetails={true}
       currentLocation={true}

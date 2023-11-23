@@ -15,9 +15,3 @@ export default class Attraction {
 	}
 
 }
-
-
-
-
-
-

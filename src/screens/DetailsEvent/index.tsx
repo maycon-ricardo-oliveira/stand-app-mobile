@@ -127,7 +127,7 @@ export default function DetailsEvent({ route }: any) {
               <Text style={styles.description}>Renato Albani * Show de Standup</Text>
               <View style={{flexDirection: 'row', alignItems: 'center' }}>
                 <Classification title="L"/>
-                <EventStatus status={'done'} />
+                <EventStatus status={'finish'} />
               </View>
             </View>
 

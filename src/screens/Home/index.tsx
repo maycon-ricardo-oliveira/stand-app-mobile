@@ -76,7 +76,7 @@ export default function Home () {
 				<ListEvents horizontal />
 
 				<BannerMedium/>
-				
+
 				<View style={{marginTop: 20}}>
 					<SeeAll
 						title='Todos Humoristas'
@@ -153,7 +153,6 @@ export default function Home () {
 				<View style={{marginTop: 20}}>
 					<BannerSmall/>
 				</View>
-				
 
 			</ScrollView>
 
