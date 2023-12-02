@@ -35,7 +35,5 @@ export const styles = StyleSheet.create({
     marginBottom: 32,
   },
 
-  checkboxContainer: {
-  }
 
 });

@@ -2,12 +2,20 @@ import StandAppGateway from "./StandAppGateway";
 import HttpClient from "../useCases/HttpClient";
 import Attraction from "../entities/Attraction";
 import axios from "axios";
+import User from "../entities/User";
+import { RegisterProps } from "../useCases/RegisterUser";
 
 export default class StandAppGatewayHttp implements StandAppGateway {
 
 	constructor (readonly httpClient: HttpClient, readonly baseUrl: string) {
 
 	}
+
+	async registerUser(userProps: RegisterProps): Promise<User> {
+		const user = await this.httpClient.post(`${this.baseUrl}/user/register`, userProps);
+		return user.data;
+	}
+
 	async getAllComedians(): Promise<Array<any>> {
 		
 		const comedians = await this.httpClient.get(`${this.baseUrl}/comedians`);

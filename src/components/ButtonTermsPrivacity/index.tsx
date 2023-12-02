@@ -2,20 +2,16 @@ import React, { useState } from 'react';
 import { Text, TouchableOpacityProps, View } from 'react-native';
 import { styles } from './styles';
 import { Checkbox } from '../Checkbox';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity } from 'react-native-gesture-handler';                       
 
 type Props = TouchableOpacityProps & {
   themeText: 'dark' | 'white';
+  isError: boolean;
+  isChecked: boolean;
+	handleCheck(): boolean;
 }
 
-export function ButtonTermsPrivacity( {themeText, ...rest }: Props) {
-
-  const [terms, setTerms] = useState(false);
-  const [ error, setError] = useState(false)
-
-  function handleTerms() {
-		setTerms(terms)
-	}
+export function ButtonTermsPrivacity( {themeText, isError, isChecked, handleCheck, ...rest }: Props) {
 
   function handleShowTerms() {
     console.log("Show terms are not implemented")
@@ -24,9 +20,10 @@ export function ButtonTermsPrivacity( {themeText, ...rest }: Props) {
   return (
     <View style={styles.container}>
       <Checkbox 
-        onPress={handleTerms}
-        isChecked={terms}
-        isError={error}
+        onPress={handleCheck}
+        handleCheck={handleCheck}
+        isChecked={isChecked}
+        isError={isError}
         checkBoxColor={themeText}
         {...rest}
       />

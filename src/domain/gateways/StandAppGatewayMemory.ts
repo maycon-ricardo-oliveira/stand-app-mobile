@@ -1,12 +1,17 @@
 import HttpClient from "../useCases/HttpClient"
 import StandAppGateway from "./StandAppGateway"
 import getAttractionsByLocationMock from '../../../tests/mocks/getAttractionsByLocationMock.json';
+import User from "../entities/User";
+import { RegisterProps } from "../useCases/RegisterUser";
 
 
 export default class StandAppGatewayMemory implements StandAppGateway {
 
 	constructor (readonly httpClient: HttpClient, readonly baseUrl: string) {
 
+	}
+	registerUser(userProps: RegisterProps): Promise<User> {
+		throw new Error("Method not implemented.");
 	}
 	getAllComedians(): Promise<any[]> {
 		throw new Error("Method not implemented.");

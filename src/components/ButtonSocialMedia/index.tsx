@@ -12,9 +12,6 @@ type Props = TouchableOpacityProps & {
 }
 
 export function ButtonSocialMedia({ media, ...rest }: Props) {
-  function getIcon() {
-   
-  }
 
   return (
     <TouchableOpacity style={styles.container}
@@ -22,9 +19,9 @@ export function ButtonSocialMedia({ media, ...rest }: Props) {
     >
       <View style={styles.icon}>
         {
-          media == 'apple' ? <AppleSvg width={32} height={32}/> :
-          media == 'facebook' ? <FacebookSvg width={32} height={32}/> :
-          media == 'google' ? <GoogleSvg width={32} height={24}/> : null
+          media == 'apple' ? <AppleSvg width={32} height={32} color="#FFF" fill="#FFF"/> :
+          media == 'facebook' ? <FacebookSvg width={32} height={32} color="#FFF" fill="#FFF"/> :
+          media == 'google' ? <GoogleSvg width={32} height={32} color="#FFF" fill="#FFF"/> : null
         }
       </View>
     </TouchableOpacity>

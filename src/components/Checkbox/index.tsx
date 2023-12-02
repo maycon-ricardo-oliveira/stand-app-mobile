@@ -12,19 +12,17 @@ type Props = TouchableOpacityProps & {
 	isChecked: boolean;
 	isError: boolean;
 	checkBoxColor: 'dark' | 'white';
+	handleCheck(): boolean;
 }
 
-export function Checkbox({ isChecked, isError, checkBoxColor, ...rest }: Props) {
+export function Checkbox({ isChecked, isError, checkBoxColor, handleCheck, ...rest }: Props) {
 
 	const [checked, setChecked] = useState(false);
 	const [error, setError] = useState(false);
 
-
-	function handleCheck() {
-
-		setError(false);
-		setChecked(!checked);
-
+	function handle() {
+		setChecked(handleCheck)
+		setChecked(isChecked)
 	}
 
 	function setTheme() {
@@ -34,7 +32,7 @@ export function Checkbox({ isChecked, isError, checkBoxColor, ...rest }: Props) 
   return (
     <TouchableOpacity 
 		  {...rest} 
-		  onPress={handleCheck} 
+		  onPress={handle} 
 		  style={[styles.button]}
 		>
 			{
@@ -46,7 +44,7 @@ export function Checkbox({ isChecked, isError, checkBoxColor, ...rest }: Props) 
 				!checked ? 
 					checkBoxColor == 'white' ?
 						<CheckDefaultWhiteSvg 
-							width={24} height={24}
+							width={24} height={24} fill="#fff"
 						/>
 					:
 						<CheckDefaultBlackSvg 

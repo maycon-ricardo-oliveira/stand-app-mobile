@@ -26,7 +26,6 @@ export default function Login(){
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState(false);
 
-
 	const [openTermsModal, setOpenTermsModal] = useState(false);
 	const [openLocationModal, setOpenLocationModal] = useState(false);
 
@@ -39,12 +38,12 @@ export default function Login(){
   }
 
 	function handleLogin(socialMedia?: string) {
-		navigation.navigate('Home')
-		if (email === '') {
-			console.log('Email inválido');
+		if (email === '' || password === '') {
 			setError(!error);
+			return;
 		}
 
+		navigation.navigate('Home')
 	}
 
 	function handleRegister(){
@@ -117,10 +116,10 @@ export default function Login(){
 							media={'google'}
 							onPress={() => handleLogin('google')}
 						/>
-						<ButtonSocialMedia 
+						{/* <ButtonSocialMedia 
 							media={'apple'}
 							onPress={() => handleCloseLocation()}
-						/>
+						/> */}
 						<ButtonSocialMedia 
 							media={'facebook'}
 							onPress={() => handleCloseTermsModal()}
