@@ -2,6 +2,7 @@
   "expo": {
     "name": "stand-app-mobile",
     "slug": "stand-app-mobile",
+    "scheme": "stand-app-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +19,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "usesAppleSignIn": true,
+      "config": {
+        "googleSignIn": {
+          "reservedCliendId": "com.googleusercontent.apps.44536136481-2u14v0cipvle6cl7jqs4rmjgqpgmuc4r"
+        }
+      },
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.44536136481-2u14v0cipvle6cl7jqs4rmjgqpgmuc4r"
+            ]
+          }
+        ]
+      },
+      "bundleIdentifier": "com.maycon.standappmobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.maycon.standappmobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"

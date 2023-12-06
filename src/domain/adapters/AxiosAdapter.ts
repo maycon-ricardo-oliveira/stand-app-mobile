@@ -13,8 +13,6 @@ export default class AxiosAdapter implements HttpClient {
 
 	async post(url: string, body: any): Promise<any> {
 		return await axios.post(url, body);
-
-		return response.data;
 	}
 
 }

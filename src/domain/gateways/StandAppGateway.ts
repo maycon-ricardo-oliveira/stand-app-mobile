@@ -7,8 +7,6 @@ export default interface StandAppGateway {
 	getAttractionsByComedianId(comedianId: string): Promise<any>;
 	getComedianById(comedianId: string): Promise<any>;
 	getPlaceById(placeId: string): Promise<any>;
-
 	getAllComedians(): Promise<Array<any>>;
-
 	registerUser(userProps: RegisterProps): Promise<User>;
 }

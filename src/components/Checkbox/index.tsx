@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
@@ -17,16 +17,12 @@ type Props = TouchableOpacityProps & {
 
 export function Checkbox({ isChecked, isError, checkBoxColor, handleCheck, ...rest }: Props) {
 
-	const [checked, setChecked] = useState(false);
+	const [checked, setChecked] = useState(isChecked);
 	const [error, setError] = useState(false);
 
 	function handle() {
+		console.log("clicked " + isChecked)
 		setChecked(handleCheck)
-		setChecked(isChecked)
-	}
-
-	function setTheme() {
-		return 
 	}
 
   return (

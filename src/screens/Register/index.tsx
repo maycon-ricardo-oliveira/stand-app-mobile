@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 import { useForm, Controller } from "react-hook-form";
 
@@ -24,7 +24,7 @@ export default function Register() {
 		phone: '',
 		password: '',
 		checkPassword: '',
-		terms: true
+		terms: false
 	}
 	const navigation = useNavigation<StackTypes>();
 
@@ -47,12 +47,11 @@ export default function Register() {
 		console.log(response);
 
 	}
-
+	
 	function handleTerms() {
-		console.log("terms " + terms )
 		setTerms(!terms)
-		setValue("terms", terms)
-		return terms;
+		setValue("terms", !terms)
+		return !terms;
 	}
 
 	return (

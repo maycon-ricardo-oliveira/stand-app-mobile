@@ -1,4 +1,3 @@
-import Address from "./Address";
 
 export default class Location {
 
@@ -6,7 +5,7 @@ export default class Location {
     readonly description: string,
 		readonly lat: string,
 		readonly lng: string,
-		readonly address: Address
+		readonly completeAddress: string,
 	) {
 
 	}

@@ -10,6 +10,9 @@ export default class StandAppGatewayMemory implements StandAppGateway {
 	constructor (readonly httpClient: HttpClient, readonly baseUrl: string) {
 
 	}
+	loginWithEmailAndPassowrd(email: Email, password: string): Promise<any> {
+		throw new Error("Method not implemented.");
+	}
 	registerUser(userProps: RegisterProps): Promise<User> {
 		throw new Error("Method not implemented.");
 	}

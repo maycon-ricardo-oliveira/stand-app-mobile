@@ -10,3 +10,6 @@ Fixing things after
  [ ] carde comedian need do fix a padding
 - Authentication
 https://docs.expo.dev/guides/authentication/
+
+
+[ ] Create modal for create account

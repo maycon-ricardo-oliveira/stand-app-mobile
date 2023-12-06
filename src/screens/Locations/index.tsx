@@ -77,7 +77,9 @@ export default function Locations() {
                 <Text style={styles.text}>{currentLocation}</Text>
               </View>
               <View style={styles.checkbox}>
-                <Checkbox isChecked={true} isError={false} checkBoxColor={"white"}/>
+                <Checkbox isChecked={true} isError={false} checkBoxColor={"white"} handleCheck={function (): boolean {
+                  throw new Error("Function not implemented.");
+                } }/>
               </View>
             </View>
 
@@ -95,15 +97,7 @@ export default function Locations() {
             data.description,
             details?.geometry.location.lat.toString(),
             details?.geometry.location.lng.toString(),
-            new Address(
-              details.address_components[0].short_name,
-              details.address_components[1].short_name,
-              details.address_components[2].short_name,
-              details.address_components[3].short_name,
-              details.address_components[4].short_name,
-              details.address_components[5].short_name,
-              details.formatted_address
-            )
+            details.formatted_address
           );
 
           handleSetCurrentLocation(currentLocation);
@@ -182,4 +176,5 @@ export default function Locations() {
       
 		</Backgound>
 	)
-}
+} 
+    
