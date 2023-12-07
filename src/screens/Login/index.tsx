@@ -80,13 +80,14 @@ export default function Login(){
 		if (!token) return;
 				
 		try {
-			const response = await fetch("https://www.googleapis.com/userinfo/v2/me", {
-				headers: { Autorization: `Bearer ${token}`}
-			});
+
+			const response = await fetch(`https://googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${token}`)
 
 			const user = await response.json();
 			await AsyncStorage.setItem("@user", JSON.stringify(user));
 			setUserInfo(user);
+
+			console.log(user);
 
 		} catch(error) {
 
@@ -179,7 +180,6 @@ export default function Login(){
 				/>
         <View style={styles.content}>
           <Text style={styles.title}>Login</Text>
-					<Text>{JSON.stringify(userInfo)}</Text>
 
 					<View style={styles.marginTop}>
 						<Input
