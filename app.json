@@ -2,7 +2,7 @@
   "expo": {
     "name": "stand-app-mobile",
     "slug": "stand-app-mobile",
-    "scheme": "stand-app-mobile",
+    "scheme": ["stand-app-mobile", "fb316432644559275"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

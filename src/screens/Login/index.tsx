@@ -33,6 +33,8 @@ import * as WebBrowser from 'expo-web-browser';
 
 import * as AuthSession from 'expo-auth-session';
 import * as Google from 'expo-auth-session/providers/google';
+import * as Facebook from 'expo-auth-session/providers/facebook';
+
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { makeRedirectUri } from "expo-auth-session";
@@ -56,17 +58,42 @@ export default function Login(){
 
 	const [userInfo, setUserInfo] = useState<any>(null);
 
-  const [request, response, promptAsync] = Google.useAuthRequest({
-		androidClientId: AND_CLIENT_ID,
-		iosClientId: IOS_CLIENT_ID,
-		webClientId: WEB_CLIENT_ID,
-		expoClientId: WEB_CLIENT_ID,
+  // const [request, response, promptAsync] = Google.useAuthRequest({
+	// 	androidClientId: AND_CLIENT_ID,
+	// 	iosClientId: IOS_CLIENT_ID,
+	// 	webClientId: WEB_CLIENT_ID,
+	// 	expoClientId: WEB_CLIENT_ID,
+	// 	redirectUri: "https://auth.expo.io/@maycon-oliveira/stand-app-mobile"
+	// });
+
+	const [request, response, promptAsync] = Facebook.useAuthRequest({
+		clientId: "316432644559275",
 		redirectUri: "https://auth.expo.io/@maycon-oliveira/stand-app-mobile"
 	})
 
 	useEffect(() => {
-		googleSignIn()
+		// googleSignIn()
+		if (response && response.type == "success" && response.authentication) {
+
+			(async () => {
+				const userInfoResponse = await fetch(
+					`https://ghaph.facebook.com/me?access_token=${response.authentication?.accessToken}&fields=id,name,picture.type(large)`
+				)
+
+				const userInfo = await userInfoResponse.json();
+				setUserInfo(userInfo)
+			})()
+
+		}
 	}, [response])
+
+	async function handlePressAsync(){
+		const result = await promptAsync();
+
+		if (result.type !== "success") {
+			alert("Uh oh, something went wrong")
+		}
+	}
 
 	function handleCloseTermsModal() {
     setOpenTermsModal(!openTermsModal);
@@ -143,6 +170,10 @@ export default function Login(){
     }
 
   };
+
+	async function fabebookSignIn() {
+
+	}
 
 	async function handleSocialMediaLogin(socialMedia: string) {
 
@@ -240,7 +271,7 @@ export default function Login(){
 						/> */}
 						<ButtonSocialMedia 
 							media={'facebook'}
-							onPress={() => handleSocialMediaLogin('facebook')}
+							onPress={() => handlePressAsync()}
 						/>
 					</View>
 				</View>
